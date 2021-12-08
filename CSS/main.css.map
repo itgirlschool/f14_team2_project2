@@ -14,7 +14,7 @@
         "../assets/scss/blocks/_buy.scss",
         "../assets/scss/blocks/_contacts.scss",
         "../assets/scss/blocks/_education.scss",
-        "../assets/scss/blocks/_main.scss",
+        "../assets/scss/blocks/_main-page.scss",
         "../assets/scss/blocks/_positive-picture.scss",
         "../assets/scss/blocks/_rent.scss",
         "../assets/scss/blocks/_sale.scss"
