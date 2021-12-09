@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     height: 100vh;
-
+    @include round-conner_left_right;
 
 
 
@@ -41,9 +41,4 @@
     @media (max-width:map-get($grid-breakpoints, md)) {
         display: none;
     }
-}
-
-.container_2b {
-    border-radius: 0px 0px 50px 50px;
-    overflow: hidden;
 }
