@@ -12,20 +12,23 @@
 
     z-index: -1;
     padding: 0px;
+
+
+    &::after {
+        box-shadow: lime;
+    }
 }
 
-//todo replace markpoints
-.main__video {
 
-    @media (max-width: 768px) {
+.main__video {
+    @include media-breakpoint-down(md) {
         display: none;
     }
 
 }
 
-.main__img {
-
-    @media (min-width:769px) {
-        display: none;
+.scroll_about_1 {
+    @include media-breakpoint-down(md) {
+        visibility: hidden;
     }
 }
