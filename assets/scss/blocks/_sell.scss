@@ -1,0 +1,62 @@
+.sell {
+    max-width: 1439px;
+    height: 919px;
+    
+&__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1320px;
+    min-height: 857px;
+   
+    margin: 0px auto;
+   
+    background-image: url('./assets/sell_img/crimea_sell.jpg');
+    background-repeat: no-repeat;
+    background-size: 954px 673px;
+    background-position: top left;
+    align-items: flex-end;
+}
+
+&__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 810px;
+    min-height: 742px;
+    box-sizing: border-box;
+    align-items: flex-end;
+    position: relative;
+   
+}
+
+&__body-item1 {
+    display: flex;
+    max-width: 169px;
+    min-height: 192px;
+    margin: 115px 0px 0px 0px;
+    position: absolute;
+}
+
+&__body-picture {
+    width: 100%;
+}
+
+&__body-item2 {
+    
+    background-color: #16697A;
+    min-height: 615px;
+    max-width: 810px;
+    border-radius: 0 43px 0 43px;
+    padding: 38px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin: 242px 0px 0px 0px;
+
+}
+}
