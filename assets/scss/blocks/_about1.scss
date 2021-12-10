@@ -14,6 +14,7 @@
     font-size: 28px;
     padding-left: 0px;
     padding-right: 0px;
+    font-family: $text-font;
 }
 
 .card-title {
@@ -22,6 +23,7 @@
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 20px;
+    font-family: $title-font;
 }
 
 .col-photo {
@@ -45,8 +47,7 @@
 
 .about-btn {
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
+
     font-size: 24px;
-    margin-left: 12em;
+
 }
