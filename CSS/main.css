@@ -1,36 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:wght@400;500;600&display=swap");
-.main-title {
-  font: 500 64px "Montserrat", sans-serif;
-  color: #489fb5;
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font: 500 64px "Montserrat", sans-serif;
+    color: #489fb5;
+  }
+  .sub-title {
+    font: 300 42px "Montserrat", sans-serif;
+    color: #FFA62B;
+  }
+  .para {
+    font: 300 16px "Rubik", serif;
+    color: #16697a;
+  }
 }
 
-.sub-title {
-  font: 300 42px "Montserrat", sans-serif;
-  color: #FFA62B;
+@media only screen and (max-width: 767px) {
+  .main-title {
+    font: 600 60px "Montserrat", sans-serif;
+    color: #489fb5;
+  }
+  .sub-title {
+    font: 400 40px "Montserrat", sans-serif;
+    color: #FFA62B;
+  }
+  .para {
+    font: 400 18px "Rubik", serif;
+    color: #16697a;
+  }
 }
 
-.para {
-  font: 300 16px "Rubik", serif;
-  color: #16697a;
-}
-
-.rent-text__header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ede7e3), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ede7e3), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ede7e3));
-  background: linear-gradient(90deg, #ede7e3 70%, #ede7e3 0), linear-gradient(-90deg, #ede7e3 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ede7e3 0), linear-gradient(-90deg, transparent 30%, #ede7e3 0);
-  background-repeat: no-repeat;
-  background-size: 200% 51%;
-  background-position: top left, bottom right;
-  background-clip: text, text, padding-box, padding-box;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.rent-text__header:hover {
-  background-position: top right, bottom left;
+@media only screen and (min-width: 768px) {
+  .rent-text__header {
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ede7e3), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ede7e3), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ede7e3));
+    background: linear-gradient(90deg, #ede7e3 70%, #ede7e3 0), linear-gradient(-90deg, #ede7e3 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ede7e3 0), linear-gradient(-90deg, transparent 30%, #ede7e3 0);
+    background-repeat: no-repeat;
+    background-size: 200% 51%;
+    background-position: top left, bottom right;
+    background-clip: text, text, padding-box, padding-box;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  .rent-text__header:hover {
+    background-position: top right, bottom left;
+  }
 }
 
 .rent {
   background-color: #ede7e3;
-  padding: 30px 0 30px 0;
 }
 /*# sourceMappingURL=main.css.map */

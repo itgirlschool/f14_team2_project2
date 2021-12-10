@@ -5,17 +5,38 @@ $para:300 16px "Rubik",
 serif;
 $title: 500 64px "Montserrat",
 sans-serif;
-.main-title {
-    font: $title;
-    color: $main_color;
+$sub-title_mob: 400 40px "Montserrat",
+sans-serif;
+$para_mob:400 18px "Rubik",
+serif;
+$title_mob: 600 60px "Montserrat",
+sans-serif;
+@media only screen and (min-width: 768px) {
+    .main-title {
+        font: $title;
+        color: $main_color;
+    }
+    .sub-title {
+        font: $sub-title;
+        color: $accent_color;
+    }
+    .para {
+        font: $para;
+        color: $dark;
+    }
 }
 
-.sub-title {
-    font: $sub-title;
-    color: $accent_color;
-}
-
-.para {
-    font: $para;
-    color: $dark;
+@media only screen and (max-width: 767px) {
+    .main-title {
+        font: $title_mob;
+        color: $main_color;
+    }
+    .sub-title {
+        font: $sub-title_mob;
+        color: $accent_color;
+    }
+    .para {
+        font: $para_mob;
+        color: $dark;
+    }
 }
