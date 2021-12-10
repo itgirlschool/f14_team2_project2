@@ -1,16 +1,16 @@
-.col-bg-dark {
-    color: #16697a;
-    font-size: 20px;
-    line-height: 50px;
+.container_about_1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .bg-blue {
     background-color: rgba(130, 192, 204, 0.2);
     border-radius: 0px 0px 50px 0px;
+    overflow: hidden;
 }
 
 .card-text {
-    color: #16697a;
+    color: $dark;
     font-size: 28px;
     padding-left: 0px;
     padding-right: 0px;
@@ -27,8 +27,7 @@
 }
 
 .col-photo {
-
-    height: 700px;
+    height: auto;
 }
 
 .row {
@@ -36,18 +35,21 @@
 }
 
 .photo-taya {
+    width: 100%;
     height: auto;
     border-radius: 0px 0px 0px 50px;
 }
 
 .about-img {
-    padding-left: 10px;
-
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 .about-btn {
     border-radius: 50px;
-
-    font-size: 24px;
-
+    background-color: $accent_color;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px 30px;
 }
