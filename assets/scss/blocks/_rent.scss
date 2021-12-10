@@ -1,25 +1,18 @@
-    .rent-text__text {
-        font: $para;
-        color: $dark;
-    }
-    
-    .rent-text__header {
-        font: $title;
-        color: $main_color;
-        background: linear-gradient(90deg, $light 70%, $light 0), linear-gradient(-90deg, $light 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, $light 0), linear-gradient(-90deg, transparent 30%, $light 0);
-        background-repeat: no-repeat;
-        background-size: 200% 51%;
-        background-position: top left, bottom right;
-        -webkit-background-clip: text, text, padding-box, padding-box;
-        background-clip: text, text, padding-box, padding-box;
-        transition: 0.8s
-    }
-    
-    .rent-text__header:hover {
-        background-position: top right, bottom left;
-    }
-    
-    .rent {
-        background-color: $light;
-        margin: $pc;
-    }
+ .rent-text__header {
+     background: linear-gradient(90deg, $light 70%, $light 0), linear-gradient(-90deg, $light 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, $light 0), linear-gradient(-90deg, transparent 30%, $light 0);
+     background-repeat: no-repeat;
+     background-size: 200% 51%;
+     background-position: top left, bottom right;
+     -webkit-background-clip: text, text, padding-box, padding-box;
+     background-clip: text, text, padding-box, padding-box;
+     transition: 0.8s
+ }
+ 
+ .rent-text__header:hover {
+     background-position: top right, bottom left;
+ }
+ 
+ .rent {
+     background-color: $light;
+     padding: $padding_pc;
+ }

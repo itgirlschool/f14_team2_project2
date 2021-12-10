@@ -5,3 +5,17 @@ $para:300 16px "Rubik",
 serif;
 $title: 500 64px "Montserrat",
 sans-serif;
+.main-title {
+    font: $title;
+    color: $main_color;
+}
+
+.sub-title {
+    font: $sub-title;
+    color: $accent_color;
+}
+
+.para {
+    font: $para;
+    color: $dark;
+}
