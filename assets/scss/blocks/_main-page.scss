@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     height: 100vh;
-    @include round-conner_left_right;
+    @include round-corner(lb_rb);
 
 
 
@@ -31,14 +31,14 @@
 
 
 .main__video {
-    @media (max-width:map-get($grid-breakpoints, md)) {
+    @include media-max-width(md) {
         display: none;
-    }
 
+    }
 }
 
 .scroll_about_1 {
-    @media (max-width:map-get($grid-breakpoints, md)) {
+    @include media-max-width(md) {
         display: none;
     }
 }
