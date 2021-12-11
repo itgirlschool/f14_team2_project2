@@ -1,5 +1,5 @@
-@media only screen and (min-width: 768px) {
-    .rent-text__header {
+.rent-text__header {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
         background: linear-gradient(90deg, $light 70%, $light 0), linear-gradient(-90deg, $light 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, $light 0), linear-gradient(-90deg, transparent 30%, $light 0);
         background-repeat: no-repeat;
         background-size: 200% 51%;
@@ -8,11 +8,15 @@
         background-clip: text, text, padding-box, padding-box;
         transition: 0.8s
     }
-    .rent-text__header:hover {
+}
+
+.rent-text__header:hover {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
         background-position: top right, bottom left;
     }
 }
 
 .rent {
     background-color: $light;
+    margin-top: 30px;
 }

@@ -17,7 +17,8 @@
         "blocks/_main-page.scss",
         "blocks/_positive-picture.scss",
         "blocks/_rent.scss",
-        "blocks/_sale.scss"
+        "blocks/_sale.scss",
+        "blocks/_reviews.scss"
     ],
     "names": [],
     "file": "main.css"
