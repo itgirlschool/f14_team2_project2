@@ -1,16 +1,19 @@
-.buy__button {
-    position: relative;
-    top: 380px;
-    left: 50px;
-    z-index: 2;
-    width: 10px;
-}
+.buy {
 
-.buy__wrapper {
-    background-color: $bright;
-    margin-bottom: 100px;
+    &__button {
+        position: relative;
+        top: 380px;
+        left: 50px;
+        z-index: 2;
+        width: 10px;
+    }
 
-    .buy__block_picture {
+    &__wrapper {
+        background-color: $bright;
+        margin-bottom: 100px;
+    }
+
+    &__block_picture {
         background-image: url(/assets/img/buy_img/buy_image.jpg);
         height: 570px;
         margin: 20px 0 20px -300px;
@@ -19,7 +22,7 @@
         padding: 10px;
     }
 
-    .buy__block_orange {
+    &__block_orange {
         z-index: 1;
         background-color: $accent_color;
         @include round-corner ($corner: 0rt);
@@ -29,20 +32,21 @@
         top: 350px;
     }
 
-    .buy__text_header {
+    &__text_header {
         font: $sub-title;
         color: $light;
         padding: 25px;
     }
 
-    .buy__text_description,
-    .buy__text_description_collapse {
+    &__text_description,
+    &__text_description_collapse {
         font: $para;
         color: $light;
         padding: 10px 20px 10px 20px;
         margin: 10px;
     }
 }
+
 
 @media screen and (max-width:map-get($grid-breakpoints, sm)) {
     .buy__block_picture {
