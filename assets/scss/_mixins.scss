@@ -1,0 +1,40 @@
+@mixin round-corner($corner) {
+    @if map-has-key($corners, $corner) {
+        $value: map-get($corners, $corner);
+        border-radius: $value;
+        overflow: hidden;
+    }
+}
+
+@mixin media-max-width($breakpoint) {
+    @if map-has-keys($grid-breakpoints, $breakpoint) {
+        $value: map-get($grid-breakpoints, $breakpoint);
+        $value: calc(#{$value} - 0.02px);
+
+        @media (max-width:$value) {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width($breakpoint) {
+    @if map-has-keys($grid-breakpoints, $breakpoint) {
+        $value: map-get($grid-breakpoints, $breakpoint);
+
+        @media (min-width:$value) {
+            @content;
+        }
+    }
+}
+
+@mixin media-between ($breakpoint1, $breakpoint2) {
+    @if map-has-keys($grid-breakpoints, $breakpoint, $breakpoint2) {
+        $value1: map-get($grid-breakpoints, $breakpoint1);
+        $value2: map-get($grid-breakpoints, $breakpoint2);
+        $value2: calc(#{$value2} - 0.02px);
+
+        @media (min-width:$value1) and (max-width:$value2) {
+            @content;
+        }
+    }
+}

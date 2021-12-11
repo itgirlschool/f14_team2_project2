@@ -1,11 +1,39 @@
 // colors
-$light: #ffffff;
-$dark: #000000;
-$bright: #0000ff;
+$light: #ede7e3;
+$dark: #16697a;
+$bright: #82C0CC;
+$accent_color: #FFA62B;
+$main_color:#489fb5;
 
-//viewport
-$mobile:375px;
-$tablet:768px;
-$big-tablet:1025px;
-$desktop:1280px;
-$large-desktop:1560px;
+
+// These breakpoints are taken from bootstrap 
+// for use it you can write  map-get($grid-breakpoints, md)
+//ex:  @media (max-width:map-get($grid-breakpoints, md))
+
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px);
+
+
+
+$corner-radius:50px;
+//the order of corners: lt rt rb lb
+//l-left, r- right, t-top,b-bottom
+$corners:(all:$corner-radius,
+    lb_rb:0 0 $corner-radius $corner-radius,
+    lt_rt:$corner-radius $corner-radius 0 0,
+    lt_rb:$corner-radius 0,
+    lb_rt:0 $corner-radius,
+    lt_lb:$corner-radius 0 0 $corner-radius,
+    rt_rb: 0 $corner-radius $corner-radius 0,
+    0lt:0px $corner-radius $corner-radius,
+    0rt:$corner-radius 0px $corner-radius $corner-radius,
+    0lb: $corner-radius $corner-radius $corner-radius 0px,
+    0rb:$corner-radius $corner-radius 0,
+    lt:$corner-radius 0px 0px 0px,
+    rt:0px $corner-radius 0px 0px,
+    lb: 0px 0px 0px $corner-radius,
+    rb:0px 0px $corner-radius 0px);
