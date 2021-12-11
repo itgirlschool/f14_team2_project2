@@ -4,10 +4,6 @@
     left: 50px;
     z-index: 2;
     width: 10px;
-
-    img {
-        width: 10%;
-    }
 }
 
 .buy__wrapper {
@@ -48,4 +44,10 @@
     }
 }
 
-@media screen and (max-width:map-get($grid-breakpoints, sm)) {}
+@media screen and (max-width:map-get($grid-breakpoints, sm)) {
+    .buy__block_picture {
+        margin: 0px 0 0px 0px;
+        height: 200px;
+        border: red solid 2px;
+    }
+}
