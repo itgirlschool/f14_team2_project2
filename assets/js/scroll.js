@@ -1,7 +1,5 @@
 (function () {
-    var squareWrapper = document.querySelector('.square-wrapper');
-    var square = squareWrapper.querySelector('.square');
-    square.classList.remove('square-transition');
+    var square = document.querySelector('.card-text__item');
 
     var observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -10,13 +8,10 @@
             }
 
             if (entry.isIntersecting) {
-                square.classList.add('square-transition');
-                return;
+                entry.target.classList.add('card-text__item-animation');
             }
-
-            square.classList.remove('square-transition');
         });
     });
 
-    observer.observe(squareWrapper);
+    observer.observe(square);
 })();
