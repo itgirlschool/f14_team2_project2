@@ -1,0 +1,127 @@
+                            .reviews__header {
+                                text-align: left;
+                                margin-bottom: 20px;
+                            }
+                            
+                            #reviews {
+                                background-color: $light;
+                                position: relative;
+                            }
+                            
+                            #carousel {
+                                overflow: auto;
+                                scroll-behavior: smooth;
+                                scrollbar-width: none;
+                                margin: 0 auto;
+                                @media (min-width: map-get($grid-breakpoints, xs)) {
+                                    width: 280px;
+                                }
+                                @media (min-width: map-get($grid-breakpoints, md)) {
+                                    width: 515px;
+                                }
+                                @media (min-width: map-get($grid-breakpoints, lg)) {
+                                    width: 785px;
+                                }
+                                @media (min-width: map-get($grid-breakpoints, xxl)) {
+                                    width: 1050px;
+                                }
+                            }
+                            
+                            #carousel::-webkit-scrollbar {
+                                height: 0;
+                            }
+                            
+                            #prev,
+                            #next {
+                                display: flex;
+                                justify-content: center;
+                                align-content: center;
+                                background: $accent_color;
+                                border: none;
+                                padding: 8px;
+                                border-radius: 50%;
+                                outline: 0;
+                                cursor: pointer;
+                                position: absolute;
+                            }
+                            
+                            #prev {
+                                top: 50%;
+                                transform: translate(50%, -50%);
+                                display: none;
+                                @media (max-width: map-get($grid-breakpoints, xl)) {
+                                    left: 10px
+                                }
+                                @media (min-width: map-get($grid-breakpoints, xl)) {
+                                    left: 40px;
+                                }
+                            }
+                            
+                            #next {
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                @media (max-width: map-get($grid-breakpoints, xl)) {
+                                    right: 10px
+                                }
+                                @media (min-width: map-get($grid-breakpoints, xl)) {
+                                    right: 50px;
+                                }
+                            }
+                            
+                            #content {
+                                display: grid;
+                                grid-gap: 15px;
+                                grid-auto-flow: column;
+                                margin: auto;
+                                box-sizing: border-box;
+                            }
+                            
+                            .item_reviews {
+                                width: 250px;
+                                background: $light;
+                                object-fit: cover;
+                                display: flex;
+                                overflow-y: hidden;
+                            }
+                            
+                            .item_reviews>img {
+                                max-width: 100%;
+                                display: inline-block;
+                            }
+                            
+                            .item_reviews img {
+                                @media (min-width: map-get($grid-breakpoints, md)) {
+                                    width: 250px;
+                                    margin: auto;
+                                }
+                                @media (min-width: map-get($grid-breakpoints, xl)) {
+                                    width: 300px;
+                                    margin: auto;
+                                }
+                            }
+                            
+                            .mobile_reviews img {
+                                @media (max-width: map-get($grid-breakpoints, md)) {
+                                    width: 300px;
+                                    margin: auto;
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                }
+                            }
+                            
+                            .mobile_reviews {
+                                @media (max-width: map-get($grid-breakpoints, md)) {
+                                    width: 280px;
+                                    max-height: 400px;
+                                    background: $light;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                            
+                            .high_screen_reviews {
+                                @media (max-width: map-get($grid-breakpoints, md)) {
+                                    display: none;
+                                }
+                            }
