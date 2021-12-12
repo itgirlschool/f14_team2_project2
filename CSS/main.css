@@ -450,8 +450,8 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 169px;
-  min-height: 192px;
-  margin: 190px 0px 0px 0px;
+  height: 192px;
+  margin: 245px 0px 0px 0px;
   position: absolute;
 }
 
@@ -461,8 +461,8 @@
 
 .sell__body-item2 {
   background-color: #16697a;
-  min-height: 315px;
-  max-width: 810px;
+  height: 100%;
+  width: 100%;
   border-radius: 0px 50px 50px;
   overflow: hidden;
   padding: 38px;
@@ -471,7 +471,7 @@
   color: #ede7e3;
   font-size: 300 16px "Rubik", serif;
   text-align: left;
-  margin: 360px 0px 0px 0px;
+  margin: 425px 0px 0px 0px;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
