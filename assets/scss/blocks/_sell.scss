@@ -27,7 +27,10 @@
     position: relative;
    
 }
-
+&__body-item2-title {
+    font-size: $sub-title;
+    color: $light;
+}
 &__body-item1 {
     display: flex;
     max-width: 169px;
@@ -42,13 +45,13 @@
 
 &__body-item2 {
     
-    background-color: #16697A;
+    background-color: $dark;
     min-height: 615px;
     max-width: 810px;
     border-radius: 0 43px 0 43px;
     padding: 38px;
     box-sizing: border-box;
-    color: white;
+    color: $light;
     font-family: Montserrat;
     font-size: 36px;
     font-style: normal;
