@@ -346,7 +346,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 992px) {
   .rent-text__header {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ede7e3), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ede7e3), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ede7e3));
     background: linear-gradient(90deg, #ede7e3 70%, #ede7e3 0), linear-gradient(-90deg, #ede7e3 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ede7e3 0), linear-gradient(-90deg, transparent 30%, #ede7e3 0);
@@ -357,6 +357,9 @@
     -webkit-transition: 0.8s;
     transition: 0.8s;
   }
+}
+
+@media (min-width: 992px) {
   .rent-text__header:hover {
     background-position: top right, bottom left;
   }
@@ -364,6 +367,25 @@
 
 .rent {
   background-color: #ede7e3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.rent img {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .rent img {
+    border-radius: 20px;
+  }
+}
+
+.rent-text__accent {
+  color: #FFA62B;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .sell {
@@ -409,6 +431,11 @@
   position: relative;
 }
 
+.sell__body-item2-title {
+  font-size: 300 42px "Montserrat", sans-serif;
+  color: #ede7e3;
+}
+
 .sell__body-item1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,14 +451,14 @@
 }
 
 .sell__body-item2 {
-  background-color: #16697A;
+  background-color: #16697a;
   min-height: 615px;
   max-width: 810px;
   border-radius: 0 43px 0 43px;
   padding: 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
+  color: #ede7e3;
   font-family: Montserrat;
   font-size: 36px;
   font-style: normal;
@@ -440,4 +467,177 @@
   letter-spacing: -0.03em;
   text-align: left;
   margin: 242px 0px 0px 0px;
+}
+
+.reviews__header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#reviews {
+  background-color: #ede7e3;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 0) {
+  #carousel {
+    width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  #carousel {
+    width: 515px;
+  }
+}
+
+@media (min-width: 992px) {
+  #carousel {
+    width: 785px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #carousel {
+    width: 1050px;
+  }
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #FFA62B;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #prev {
+    left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #prev {
+    left: 40px;
+  }
+}
+
+#next {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  #next {
+    right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #next {
+    right: 50px;
+  }
+}
+
+#content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item_reviews {
+  width: 250px;
+  background: #ede7e3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.item_reviews > img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .item_reviews img {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item_reviews img {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile_reviews img {
+    width: 300px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile_reviews {
+    width: 280px;
+    max-height: 400px;
+    background: #ede7e3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .high_screen_reviews {
+    display: none;
+  }
 }
