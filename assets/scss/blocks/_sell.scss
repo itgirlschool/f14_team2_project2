@@ -32,6 +32,14 @@
     font-size: $sub-title;
     color: $light;
     padding-bottom: 25px;
+
+    @include media-max-width(sm) {
+        font-size: $sub-title_mob;
+    }
+
+    @include media-max-width(md) {
+        font-size: $sub-title_mob;
+    }
 }
 &__body-item1 {
     display: flex;
@@ -58,6 +66,13 @@
   
     text-align: left;
     margin: 425px 0px 0px 0px;
+    
+    @include media-max-width(sm) {
+        font-size: $para_mob;
+    }
 
+    @include media-max-width(md) {
+        font-size: $para_mob;
+    }
 }
 }
