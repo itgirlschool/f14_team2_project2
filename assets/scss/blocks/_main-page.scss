@@ -42,3 +42,24 @@
         display: none;
     }
 }
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: #e62a52;
+    border-radius: 8px;
+}
+
+.square-animation {
+    animation: wipe-enter 2s 1
+}
+
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, .025)
+    }
+
+    50% {
+        transform: scale(1, .025)
+    }
+}
