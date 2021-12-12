@@ -36,8 +36,8 @@
 &__body-item1 {
     display: flex;
     max-width: 169px;
-    min-height: 192px;
-    margin: 190px 0px 0px 0px;
+    height: 192px;
+    margin: 245px 0px 0px 0px;
     position: absolute;
 }
 
@@ -48,8 +48,8 @@
 &__body-item2 {
     
     background-color: $dark;
-    min-height: 315px;
-    max-width: 810px;
+    height: 100%;
+    width: 100%;
     @include round-corner ($corner: 0lt)
     padding: 38px;
     box-sizing: border-box;
@@ -57,7 +57,7 @@
     font-size: $para;
   
     text-align: left;
-    margin: 360px 0px 0px 0px;
+    margin: 425px 0px 0px 0px;
 
 }
 }
