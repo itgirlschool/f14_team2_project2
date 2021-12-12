@@ -33,25 +33,32 @@
     }
 
     &__text_header {
-        font: $sub-title;
+        font-size: $sub-title;
         color: $light;
         padding: 25px;
+
+        @include media-max-width(sm) {
+            font-size: $sub-title_mob;
+        }
+
+        @include media-max-width(md) {
+            font-size: $sub-title_mob;
+        }
     }
 
     &__text_description,
     &__text_description_collapse {
-        font: $para;
+        font-size: $para;
         color: $light;
         padding: 10px 20px 10px 20px;
         margin: 10px;
-    }
-}
 
+        @include media-max-width(sm) {
+            font-size: $para_mob;
+        }
 
-@media screen and (max-width:map-get($grid-breakpoints, sm)) {
-    .buy__block_picture {
-        margin: 0px 0 0px 0px;
-        height: 200px;
-        border: red solid 2px;
+        @include media-max-width(md) {
+            font-size: $para_mob;
+        }
     }
 }
