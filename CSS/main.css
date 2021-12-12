@@ -405,12 +405,20 @@
   min-height: 857px;
   margin: 0px auto;
   background-image: url("/assets/img/sell_img/crimea_sell.jpg");
+  border-radius: 0px 50px 0px 0px;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: 954px 673px;
   background-position: top left;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .sell__content {
+    border-radius: 0px 20px 0px 0px;
+  }
 }
 
 .sell__body {
@@ -434,6 +442,7 @@
 .sell__body-item2-title {
   font-size: 300 42px "Montserrat", sans-serif;
   color: #ede7e3;
+  padding-bottom: 25px;
 }
 
 .sell__body-item1 {
@@ -442,7 +451,7 @@
   display: flex;
   max-width: 169px;
   min-height: 192px;
-  margin: 115px 0px 0px 0px;
+  margin: 190px 0px 0px 0px;
   position: absolute;
 }
 
@@ -452,21 +461,23 @@
 
 .sell__body-item2 {
   background-color: #16697a;
-  min-height: 615px;
+  min-height: 315px;
   max-width: 810px;
-  border-radius: 0 43px 0 43px;
+  border-radius: 0px 50px 50px;
+  overflow: hidden;
   padding: 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ede7e3;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.03em;
+  font-size: 300 16px "Rubik", serif;
   text-align: left;
-  margin: 242px 0px 0px 0px;
+  margin: 360px 0px 0px 0px;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .sell__body-item2 {
+    border-radius: 0px 20px 20px;
+  }
 }
 
 .reviews__header {
