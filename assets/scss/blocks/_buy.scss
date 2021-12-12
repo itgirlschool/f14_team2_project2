@@ -1,16 +1,49 @@
 .buy {
 
     &__button {
-        position: relative;
-        top: 380px;
-        left: 50px;
-        z-index: 2;
-        width: 10px;
+
+        display: block;
+
+        img {
+            width: 100px;
+        }
+
+        @include media-min-width (xxl) {
+            position: relative;
+            top: 350px;
+            margin-left: 11%;
+            z-index: 2;
+        }
+
+        @include media-between (xl, xxl) {
+            position: relative;
+            top: 350px;
+            margin-left: 11%;
+            z-index: 2;
+        }
+
+        @include media-between (lg, xl) {
+            position: relative;
+            top: 330px;
+            margin-left: 10%;
+            z-index: 2;
+        }
+
+        @include media-between (xs, lg) {
+            position: relative;
+            top: 30px;
+            margin-left: 40%;
+            z-index: 2;
+        }
     }
 
     &__wrapper {
         background-color: $bright;
         margin-bottom: 100px;
+
+        @include media-between (xs, lg) {
+            @include round-corner ($corner: all);
+        }
     }
 
     &__block_picture {
@@ -28,8 +61,12 @@
         @include round-corner ($corner: 0rt);
         margin-bottom: 10px;
         height: 100%;
-        position: relative;
-        top: 350px;
+        align-self: end;
+
+        @include media-between (xs, lg) {
+            @include round-corner ($corner: all);
+            margin-bottom: 0px;
+        }
     }
 
     &__text_header {
