@@ -1,8 +1,30 @@
+.header_full {
+    @include media-between(xs, lg) {
+        display: none;
+    }
+}
+
+
+.header_mobile {
+    @include media-min-width(lg) {
+        display: none;
+    }
+}
+
 .navbar-header {
     width: 100%;
-    z-index: 1;
+    z-index: 200;
     background-color: rgba($light, $alpha: 0.95);
 
+    @include media-between(xs, lg) {
+        background-color: $light;
+
+    }
+
+}
+
+.navbar_margin-items {
+    padding: 24px 24px 0 24px
 }
 
 .container_fullscreen {
@@ -23,6 +45,10 @@
     color: $dark;
     border-bottom: 2px solid transparent;
 
+    @include media-max-width(lg) {
+        padding: 0 0 25px 0;
+    }
+
     &:hover {
         color: $dark;
         border-bottom: 2px solid $dark;
@@ -37,4 +63,13 @@
 
 .item-visual_tel-hover:hover {
     border-bottom: 2px solid transparent;
+}
+
+.navbar-toggler_visual:focus {
+    box-shadow: none;
+}
+
+.icon_custom {
+    color: $dark;
+    font-size: 40px;
 }
