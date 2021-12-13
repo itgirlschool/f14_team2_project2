@@ -1,7 +1,12 @@
 window.onload = () => {
-    // var square = document.querySelector('.card-text__item');
 
-    var observer = new IntersectionObserver((entries, observer) => {
+    // var square = document.querySelector('.card-text__item');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
                 return;
@@ -13,15 +18,15 @@ window.onload = () => {
         })
     }, options)
 
-    var animUl = document.querySelectorAll('.card-text__item');
-    if (animUl.length > 0) {
+    const animUl = document.querySelectorAll('.card-text__item');
 
-        for (let index = 0; index < animUl.length; index++) {
-            observer.observe(animOnScroll[index]);
-        }
-    }
-
+    animUl.forEach(elem => {
+        // for (let index = 0; index < animUl.length; index++) {
+        observer.observe(elem);
+    })
 }
+
+
 
 
 // var animUl = document.querySelectorAll('.card-text__item');
