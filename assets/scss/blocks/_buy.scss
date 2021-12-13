@@ -1,7 +1,7 @@
 .buy {
 
     &__button {
-
+        width: 100px;
         display: block;
 
         img {
@@ -32,7 +32,7 @@
         @include media-between (xs, lg) {
             position: relative;
             top: 30px;
-            margin-left: 40%;
+            margin: 0 auto;
             z-index: 2;
         }
     }
@@ -51,8 +51,8 @@
         height: 570px;
         margin: 20px 0 20px -300px;
         @include round-corner ($corner: rt);
-        background-position: center center;
-        background-size: 62%;
+        background-position: 100%;
+        background-size: 100%;
         background-repeat: no-repeat;
     }
 
