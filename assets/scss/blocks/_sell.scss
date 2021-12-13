@@ -1,12 +1,12 @@
 .sell {
-    max-width: 1439px;
+    width: 100%;
     height: 919px;
     
 &__content {
     display: flex;
     flex-direction: column;
     max-width: 1320px;
-    min-height: 857px;
+    height: 857px;
    
     margin: 0px auto;
    
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     max-width: 810px;
-    min-height: 742px;
+    height: 742px;
     box-sizing: border-box;
     align-items: flex-end;
     position: relative;
