@@ -38,8 +38,8 @@
     }
 
     &__wrapper {
-        background-color: $bright;
-        margin-bottom: 100px;
+        background-color: rgba(130, 192, 204, 0.2);
+        margin-bottom: 0px;
 
         @include media-between (xs, lg) {
             @include round-corner ($corner: all);
@@ -51,8 +51,9 @@
         height: 570px;
         margin: 20px 0 20px -300px;
         @include round-corner ($corner: rt);
-        background-position: 70% 40%;
-        padding: 10px;
+        background-position: center center;
+        background-size: 62%;
+        background-repeat: no-repeat;
     }
 
     &__block_orange {
