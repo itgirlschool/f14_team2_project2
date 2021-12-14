@@ -12,3 +12,27 @@ body {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+.rent-text__header {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, #eeff91 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
+        background-repeat: no-repeat;
+        background-size: 200% 51%;
+        background-position: top left, bottom right;
+        -webkit-background-clip: text, text, padding-box, padding-box;
+        background-clip: text, text, padding-box, padding-box;
+        transition: 0.8s
+    }
+}
+
+.rent-text__header:hover {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        background-position: top right, bottom left;
+    }
+}
+
+.rent-text_header-mark {
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        background-position: top right, bottom left;
+    }
+}
