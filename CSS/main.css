@@ -32,10 +32,32 @@
   }
 }
 
+@media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
+  .header_full {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .header_mobile {
+    display: none;
+  }
+}
+
 .navbar-header {
   width: 100%;
-  z-index: 1;
+  z-index: 200;
   background-color: rgba(237, 231, 227, 0.95);
+}
+
+@media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
+  .navbar-header {
+    background-color: #ede7e3;
+  }
+}
+
+.navbar_margin-items {
+  padding: 24px 24px 0 24px;
 }
 
 .container_fullscreen {
@@ -57,6 +79,12 @@
   border-bottom: 2px solid transparent;
 }
 
+@media (max-width: calc(992px - 0.02px)) {
+  .navbar-item_visual {
+    padding: 0 0 25px 0;
+  }
+}
+
 .navbar-item_visual:hover {
   color: #16697a;
   border-bottom: 2px solid #16697a;
@@ -70,6 +98,16 @@
 
 .item-visual_tel-hover:hover {
   border-bottom: 2px solid transparent;
+}
+
+.navbar-toggler_visual:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.icon_custom {
+  color: #16697a;
+  font-size: 40px;
 }
 
 .container_about_1 {
@@ -389,7 +427,7 @@
 }
 
 .sell {
-  max-width: 1439px;
+  width: 100%;
   height: 919px;
 }
 
@@ -402,7 +440,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1320px;
-  min-height: 857px;
+  height: 857px;
   margin: 0px auto;
   background-image: url("/assets/img/sell_img/crimea_sell.jpg");
   border-radius: 0px 50px 0px 0px;
@@ -430,7 +468,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 810px;
-  min-height: 742px;
+  height: 742px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-align: end;
@@ -445,13 +483,25 @@
   padding-bottom: 25px;
 }
 
+@media (max-width: calc(576px - 0.02px)) {
+  .sell__body-item2-title {
+    font-size: 400 40px "Montserrat", sans-serif;
+  }
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .sell__body-item2-title {
+    font-size: 400 40px "Montserrat", sans-serif;
+  }
+}
+
 .sell__body-item1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 169px;
-  min-height: 192px;
-  margin: 190px 0px 0px 0px;
+  height: 192px;
+  margin: 245px 0px 0px 0px;
   position: absolute;
 }
 
@@ -461,8 +511,8 @@
 
 .sell__body-item2 {
   background-color: #16697a;
-  min-height: 315px;
-  max-width: 810px;
+  height: 100%;
+  width: 100%;
   border-radius: 0px 50px 50px;
   overflow: hidden;
   padding: 38px;
@@ -471,12 +521,24 @@
   color: #ede7e3;
   font-size: 300 16px "Rubik", serif;
   text-align: left;
-  margin: 360px 0px 0px 0px;
+  margin: 425px 0px 0px 0px;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
   .sell__body-item2 {
     border-radius: 0px 20px 20px;
+  }
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .sell__body-item2 {
+    font-size: 400 18px "Rubik", serif;
+  }
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .sell__body-item2 {
+    font-size: 400 18px "Rubik", serif;
   }
 }
 
