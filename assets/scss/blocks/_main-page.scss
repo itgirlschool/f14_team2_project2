@@ -52,19 +52,23 @@
 
 @keyframes wipe-enter {
     0% {
-        transform: translateX(100%)
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     50% {
-        transform: translateX(0%)
+        transform: translateX(0%);
+        opacity: 1;
     }
 }
 
 
 $count:5;
 
+
+
 .card-text__item-animation {
-    animation: 2s ease-in-out both wipe-enter;
+    animation: 2s ease-out both wipe-enter;
 }
 
 @for $i from 1 through 5 {
