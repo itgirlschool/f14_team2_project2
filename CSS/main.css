@@ -440,7 +440,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1320px;
-  min-height: 857px;
+  height: 857px;
   margin: 0px auto;
   background-image: url("/assets/img/sell_img/crimea_sell.jpg");
   border-radius: 0px 50px 0px 0px;
@@ -468,7 +468,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 810px;
-  min-height: 742px;
+  height: 742px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-align: end;
