@@ -1,12 +1,12 @@
 .sell {
-    max-width: 1439px;
+    width: 100%;
     height: 919px;
     
 &__content {
     display: flex;
     flex-direction: column;
     max-width: 1320px;
-    min-height: 857px;
+    height: 857px;
    
     margin: 0px auto;
    
@@ -16,13 +16,16 @@
     background-size: 954px 673px;
     background-position: top left;
     align-items: flex-end;
+    @include media-max-width(sm) {
+        background: none;
+        @include round-corner ($corner: all);}
 }
 
 &__body {
     display: flex;
     flex-direction: column;
     max-width: 810px;
-    min-height: 742px;
+    height: 742px;
     box-sizing: border-box;
     align-items: flex-end;
     position: relative;
@@ -43,22 +46,27 @@
 }
 &__body-item1 {
     display: flex;
-    max-width: 169px;
-    height: 192px;
-    margin: 245px 0px 0px 0px;
+    max-width: 120px;
+    height: 130px;
+    margin: 320px 0px 0px 0px;
     position: absolute;
+    @include media-max-width(sm) {
+        margin-left: 40%;}
+    
 }
 
 &__body-picture {
     width: 100%;
-}
+    }
+    
+
 
 &__body-item2 {
     
     background-color: $dark;
     height: 100%;
     width: 100%;
-    @include round-corner ($corner: 0lt)
+    @include round-corner ($corner: 0lt);
     padding: 38px;
     box-sizing: border-box;
     color: $light;
