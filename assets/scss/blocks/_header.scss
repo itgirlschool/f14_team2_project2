@@ -83,3 +83,42 @@
     color: $dark;
     font-size: 40px;
 }
+
+.icon_element-bar {
+
+    background-color: $dark;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    display: block;
+    margin: 5px auto;
+
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        transition: 0.7s;
+        animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    }
+
+    &:nth-child(1) {
+        transition: 0.5s;
+    }
+}
+
+.icon.active .icon_element-bar:nth-child(2) {
+    opacity: 0;
+}
+
+
+.icon.active .icon_element-bar:nth-child(1) {
+
+    transform: translateY(8px) rotate(45deg);
+
+}
+
+
+.icon.active .icon_element-bar:nth-child(3) {
+
+    transform: translateY(-8px) rotate(-45deg);
+
+}
