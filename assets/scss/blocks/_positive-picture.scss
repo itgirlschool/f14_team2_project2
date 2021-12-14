@@ -1,26 +1,15 @@
 .positive_picture-container {
   
-    margin: 30px 0 81px 0;
+    margin: 30px 0 20px 0;
     
 }
 .card-positive {
     border: none;
-}
-.card-title-positive{
-    font-size: $sub-title;
-    color: $dark;
-    text-align: center;
-    line-height: 110px;
-    @include media-max-width(sm) {
-        font-size: $sub-title_mob;
-    }
-
-    @include media-max-width(md) {
-        font-size: $sub-title_mob;
-    }
    
 }
 .card-img-bottom {
     width: 100%;
     @include round-corner ($corner: lb_rb)
 }
+
+
