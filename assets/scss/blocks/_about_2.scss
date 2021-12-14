@@ -1,5 +1,8 @@
 .container_about_2 {
-    background-color: rgba($accent_color, 0.3);
+    background-image: linear-gradient(rgba($accent_color, 0.5), rgba($accent_color, 0.5)), url(/assets/img/about_2/Taisiya.jpg);
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
 }
 
 .card_about_2 {
@@ -12,4 +15,12 @@
     text-align: center;
     font-size: 22px;
     color: $black;
+}
+
+.col_2__about_2 {
+    padding-top: 20%;
+
+    @include media-max-width(md) {
+        padding-top: 0;
+    }
 }
