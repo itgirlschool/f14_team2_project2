@@ -11,3 +11,5 @@ $color-social-telegram:#0088cc;
 // for use it you can write  map-get($grid-breakpoints, md)
 //ex:  @media (max-width:map-get($grid-breakpoints, md))
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+//for circle buttons
+$radius:15px;
