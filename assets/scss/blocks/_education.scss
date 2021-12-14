@@ -1,0 +1,43 @@
+.education-title {
+    background: rgba(130, 192, 204, 0.2);
+    border-radius: 50px 50px 0px 0px;
+}
+
+// .education {
+//     position: relative;
+//     display: flex @include round-corner(lb_rb);
+
+//     background: rgba(130, 192, 204, 0.2);
+//     border-radius: 50px 50px 0px 0px;
+// }
+
+.container-fluid education {
+    width: 100%;
+}
+
+.education-title main-title {
+    font: 500 64px "Montserrat", sans-serif;
+    color: #489fb5;
+    margin-top: 30px;
+}
+
+.education-title body-title {
+    font: 200 30 px "Rubik", sans-serif;
+    color: #FFA62B;
+}
+
+.education-card {}
+
+.education-card title {}
+
+.education-title_icon {
+    position: relative;
+    width: 139px;
+    height: 155px;
+}
+
+.main-page {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    @include round-corner(lb_rb);
