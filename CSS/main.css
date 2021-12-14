@@ -364,50 +364,6 @@
   }
 }
 
-.buy__button {
-  display: block;
-}
-
-.buy__button img {
-  width: 100px;
-}
-
-@media (min-width: 1400px) {
-  .buy__button {
-    position: relative;
-    top: 350px;
-    margin-left: 11%;
-    z-index: 2;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: calc(1400px - 0.02px)) {
-  .buy__button {
-    position: relative;
-    top: 350px;
-    margin-left: 11%;
-    z-index: 2;
-  }
-}
-
-@media (min-width: 992px) and (max-width: calc(1200px - 0.02px)) {
-  .buy__button {
-    position: relative;
-    top: 330px;
-    margin-left: 10%;
-    z-index: 2;
-  }
-}
-
-@media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
-  .buy__button {
-    position: relative;
-    top: 30px;
-    margin-left: 40%;
-    z-index: 2;
-  }
-}
-
 .buy__wrapper {
   background-color: rgba(130, 192, 204, 0.2);
   margin-bottom: 0px;
@@ -427,42 +383,43 @@
 }
 
 .buy__block_picture {
+  height: 500px;
+  margin: 0 auto;
+}
+
+.buy__block_image {
+  height: 70%;
   background-image: url(/assets/img/buy_img/buy_image.jpg);
-  height: 570px;
-  margin: 20px 0 20px -300px;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 50px;
   overflow: hidden;
-  background-position: center center;
-  background-size: 62%;
+  background-position: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__block_picture {
-    border-radius: 0px 20px 0px 0px;
+  .buy__block_image {
+    border-radius: 20px;
   }
 }
 
-.buy__block_orange {
-  z-index: 1;
-  background-color: #FFA62B;
-  border-radius: 50px 0px 50px 50px;
+.buy__block_main {
+  border-radius: 50px;
   overflow: hidden;
-  margin-bottom: 10px;
   height: 100%;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__block_orange {
-    border-radius: 20px 0px 20px 20px;
+  .buy__block_main {
+    border-radius: 20px;
   }
 }
 
 @media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
-  .buy__block_orange {
+  .buy__block_main {
     border-radius: 50px;
     overflow: hidden;
     margin-bottom: 0px;
@@ -470,14 +427,15 @@
 }
 
 @media (min-width: 0) and (max-width: calc(992px - 0.02px)) and (max-width: calc(576px - 0.02px)) {
-  .buy__block_orange {
+  .buy__block_main {
     border-radius: 20px;
   }
 }
 
 .buy__text_header {
+  display: inline-block;
+  position: relative;
   font-size: 300 42px "Montserrat", sans-serif;
-  color: #ede7e3;
   padding: 25px;
 }
 
@@ -493,21 +451,39 @@
   }
 }
 
-.buy__text_description, .buy__text_description_collapse {
+.buy__text_header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 29px;
+  left: 26px;
+  right: 27px;
+  bottom: 26px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa72b23), to(#ffa72bcb));
+  background: linear-gradient(to right, #ffa72b23, #ffa72bcb);
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.buy__text_header:hover::before {
+  opacity: 1;
+}
+
+.buy__text_description {
   font-size: 300 16px "Rubik", serif;
-  color: #ede7e3;
   padding: 10px 20px 10px 20px;
   margin: 10px;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__text_description, .buy__text_description_collapse {
+  .buy__text_description {
     font-size: 400 18px "Rubik", serif;
   }
 }
 
 @media (max-width: calc(768px - 0.02px)) {
-  .buy__text_description, .buy__text_description_collapse {
+  .buy__text_description {
     font-size: 400 18px "Rubik", serif;
   }
 }
@@ -742,139 +718,14 @@ html:focus-within {
   margin-bottom: 15px;
 }
 
-.sell {
-  width: 100%;
-  height: 919px;
-}
-
-.sell__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 1320px;
-  height: 857px;
-  margin: 0px auto;
-  background-image: url("/assets/img/sell_img/crimea_sell.jpg");
-  border-radius: 0px 50px 0px 0px;
+.sell-img {
+  border-radius: 50px;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 954px 673px;
-  background-position: top left;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .sell__content {
-    border-radius: 0px 20px 0px 0px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .sell__content {
-    background: none;
-    border-radius: 50px;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) and (max-width: calc(576px - 0.02px)) {
-  .sell__content {
+  .sell-img {
     border-radius: 20px;
-  }
-}
-
-.sell__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 810px;
-  height: 742px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
-}
-
-.sell__body-item2-title {
-  font-size: 300 42px "Montserrat", sans-serif;
-  color: #ede7e3;
-  padding-bottom: 25px;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .sell__body-item2-title {
-    font-size: 400 40px "Montserrat", sans-serif;
-  }
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .sell__body-item2-title {
-    font-size: 400 40px "Montserrat", sans-serif;
-  }
-}
-
-.sell__body-item1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 120px;
-  height: 130px;
-  margin: 320px 0px 0px 0px;
-  position: absolute;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .sell__body-item1 {
-    margin-left: 40%;
-  }
-}
-
-.sell__body-picture {
-  width: 100%;
-}
-
-.sell__body-item2 {
-  background-color: #16697a;
-  height: 100%;
-  width: 100%;
-  border-radius: 0px 50px 50px;
-  overflow: hidden;
-  padding: 38px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #ede7e3;
-  font-size: 300 16px "Rubik", serif;
-  text-align: left;
-  margin: 425px 0px 0px 0px;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .sell__body-item2 {
-    border-radius: 0px 20px 20px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .sell__body-item2 {
-    font-size: 400 18px "Rubik", serif;
-  }
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .sell__body-item2 {
-    font-size: 400 18px "Rubik", serif;
   }
 }
 
