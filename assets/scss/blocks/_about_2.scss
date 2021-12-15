@@ -1,0 +1,19 @@
+.container_about_2 {
+    background-color: rgba($accent_color, 0.2);
+}
+
+.card_about_2 {
+    min-height: 15vh;
+    background-color: $white;
+    @include round-corner ($corner: lb_rb);
+}
+
+.text_about_2 {
+    text-align: center;
+    color: $black;
+}
+
+.photo_taisiay {
+    width: 100%;
+    @include round-corner ($corner: lb_rb);
+}

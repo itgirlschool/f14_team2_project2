@@ -1,0 +1,41 @@
+// Font 
+$sub-title:300 42px "Montserrat",
+sans-serif;
+$para:300 16px "Rubik",
+serif;
+$title: 500 64px "Montserrat",
+sans-serif;
+$sub-title_mob: 400 40px "Montserrat",
+sans-serif;
+$para_mob:400 18px "Rubik",
+serif;
+$title_mob: 600 60px "Montserrat",
+sans-serif;
+
+
+.main-title {
+    font: $title;
+    color: $main_color;
+
+    @include media-max-width(md) {
+        font: $title_mob;
+    }
+}
+
+.sub-title {
+    font: $sub-title;
+    color: $accent_color;
+
+    @include media-max-width(md) {
+        font: $sub-title_mob;
+    }
+}
+
+.para {
+    font: $para;
+    color: $dark;
+
+    @include media-max-width(md) {
+        font: $para-mob;
+    }
+}
