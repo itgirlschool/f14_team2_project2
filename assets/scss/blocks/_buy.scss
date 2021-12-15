@@ -24,12 +24,20 @@
 
 
     &__picture {
+
         img {
             width: auto;
-            height: 500px;
+            height: 31.25rem;
             margin-top: 10%;
             margin-bottom: 10%;
-            @include round-corner(all)
+            @include round-corner(all);
+
+            @include media-between (sm, md) {
+                margin: 0;
+                margin-bottom: 10%;
+
+            }
         }
+
     }
 }
