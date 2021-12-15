@@ -25,9 +25,10 @@
 
     &__picture {
         img {
-            height: 80%;
-            margin-top: auto;
-            margin-bottom: auto;
+            width: auto;
+            height: 500px;
+            margin-top: 10%;
+            margin-bottom: 10%;
             @include round-corner(all)
         }
     }
