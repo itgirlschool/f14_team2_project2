@@ -8,6 +8,8 @@ $main_color:#489fb5;
 $color-social-viber:#7360f2;
 $color-social-whatsup:#43d854;
 $color-social-telegram:#0088cc;
+$black: #000000;
+$white: #ffffff;
 // These breakpoints are taken from bootstrap 
 // for use it you can write  map-get($grid-breakpoints, md)
 //ex:  @media (max-width:map-get($grid-breakpoints, md))
@@ -18,3 +20,5 @@ $grid-breakpoints: (xs: 0,
     lg: 992px,
     xl: 1200px,
     xxl: 1400px);
+
+$radius:15px;
