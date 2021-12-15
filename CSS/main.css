@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:wght@400;500;600&display=swap");
+.main-title {
+  font: 500 64px "Montserrat", sans-serif;
+  color: #489fb5;
 @font-face {
   font-family: "Montserrat";
   src: url(/assets/fonts/Montserrat-Light.ttf);
@@ -66,6 +70,7 @@
 
 @media (max-width: calc(768px - 0.02px)) {
   .main-title {
+    font: 600 60px "Montserrat", sans-serif;
     font-size: 54px;
   }
 }
@@ -102,6 +107,24 @@
 }
 
 .sub-title {
+  font: 300 42px "Montserrat", sans-serif;
+  color: #FFA62B;
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .sub-title {
+    font: 400 40px "Montserrat", sans-serif;
+  }
+}
+
+.para {
+  font: 300 16px "Rubik", serif;
+  color: #16697a;
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .para {
+    font: 400 18px "Rubik", serif;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -518,6 +541,22 @@ html:focus-within {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .main-page {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.main-page__title {
+  color: #16697a;
+}
+
+.main-page__sub-title {
+  color: #FFA62B;
 }
 
 .main-page__title {
@@ -534,6 +573,7 @@ html:focus-within {
   position: absolute;
   width: 100%;
   height: 100%;
+  background: rgba(237, 231, 227, 0.5);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(22, 105, 122, 0.5)), to(rgba(237, 231, 227, 0.9)));
   background: linear-gradient(0deg, rgba(22, 105, 122, 0.5) 30%, rgba(237, 231, 227, 0.9) 100%);
   z-index: -1;
@@ -552,6 +592,12 @@ html:focus-within {
 
 @media (max-width: calc(768px - 0.02px)) {
   .main__video {
+    display: none;
+  }
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .scroll_about_1 {
     display: none;
   }
 }
@@ -696,6 +742,46 @@ html:focus-within {
   }
 }
 
+@media (min-width: 992px) {
+  .rent-text__header {
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ede7e3), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ede7e3), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ede7e3)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ede7e3));
+    background: linear-gradient(90deg, #ede7e3 70%, #ede7e3 0), linear-gradient(-90deg, #ede7e3 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ede7e3 0), linear-gradient(-90deg, transparent 30%, #ede7e3 0);
+    background-repeat: no-repeat;
+    background-size: 200% 51%;
+    background-position: top left, bottom right;
+    background-clip: text, text, padding-box, padding-box;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+}
+
+@media (min-width: 992px) {
+  .rent-text__header:hover {
+    background-position: top right, bottom left;
+  }
+}
+
+.rent {
+  background-color: #ede7e3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.rent img {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .rent img {
+    border-radius: 20px;
+  }
+}
+
+.rent-text__accent {
+  color: #FFA62B;
+  font-size: 24px;
+  margin-bottom: 15px;
 .rent img {
   border-radius: 50px;
   overflow: hidden;
@@ -752,12 +838,17 @@ body {
   }
 }
 
+.sell {
+  background-color: #16697a;
+}
+
 .reviews__header {
   text-align: left;
   margin-bottom: 20px;
 }
 
 #reviews {
+  background-color: #ede7e3;
   position: relative;
 }
 
@@ -929,6 +1020,7 @@ body {
   z-index: 20;
   right: calc(7vw - 15px * 4);
   margin: auto;
+  top: calc(90vh - 15px - 10px);
   top: calc(90vh - 15px - 5px);
 }
 
