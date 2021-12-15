@@ -63,3 +63,20 @@
     text-decoration: none;
     color: white;
 }
+
+
+
+.card-text__item-animation {
+    animation: slide-right-enter 2s 1
+}
+
+@keyframes slide-right-enter {
+    from {
+        left: -100%;
+        // transform: scale(0, .025)
+    }
+
+    to {
+        left: 0;
+    }
+}
