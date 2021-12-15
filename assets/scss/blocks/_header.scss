@@ -14,10 +14,10 @@
 .navbar-header {
     width: 100%;
     z-index: 200;
-    background-color: rgba($light, $alpha: 0.95);
+    background-color: rgba($header-color, $alpha: 0.95);
 
     @include media-between(xs, lg) {
-        background-color: $light;
+        background-color: $header-color;
         padding: 15px 0;
 
     }
@@ -43,7 +43,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font: $para;
-    color: $dark;
+    color: $light;
     border-bottom: 2px solid transparent;
 
     @include media-max-width(lg) {
@@ -55,14 +55,14 @@
     }
 
     &:hover {
-        color: $dark;
-        border-bottom: 2px solid $dark;
+        color: $light;
+        border-bottom: 2px solid $light;
     }
 
     a {
         text-decoration: none;
         font: $para;
-        color: $dark;
+        color: $light;
     }
 }
 
@@ -80,13 +80,13 @@
 }
 
 .icon_custom {
-    color: $dark;
+    color: $light;
     font-size: 40px;
 }
 
 .icon_element-bar {
 
-    background-color: $dark;
+    background-color: $light;
     width: 30px;
     height: 3px;
     position: relative;

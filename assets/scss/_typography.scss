@@ -1,4 +1,3 @@
-// Font 
 $sub-title:300 42px "Montserrat",
 sans-serif;
 $para:300 16px "Rubik",
@@ -110,7 +109,7 @@ sans-serif;
 .text_bold {
     font-family: $text_font;
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 400;
     letter-spacing: 1px;
 
     color: $main_color;
@@ -124,7 +123,20 @@ sans-serif;
 }
 
 //todo прописать тоненький шрифт
-// .text {}
+.text {
+    font-family: $text_font;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1;
+
+    color: $main_color;
+
+    @include media-max-width(md) {
+
+        font-size: 14px;
+    }
+}
 
 .text_light {
     color: $light;
@@ -155,5 +167,14 @@ sans-serif;
 
     @include media-max-width(sm) {
         font-size: 20px;
+    }
+}
+
+.text_thin {
+    font-family: $title-font;
+    font-size: 36px;
+
+    @include media-max-width(md) {
+        font-size: 30px;
     }
 }

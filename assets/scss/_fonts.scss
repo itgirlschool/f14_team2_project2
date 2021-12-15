@@ -20,20 +20,26 @@
 
 @font-face {
     font-family: "Rubik";
+    src: url(/assets/fonts/Rubik-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Rubik";
     src: url(/assets/fonts/Rubik-Regular.ttf);
-    font-weight: 100;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: "Rubik";
     src: url(/assets/fonts/Rubik-Medium.ttf);
-    font-weight: 200;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "Rubik";
     src: url(/assets/fonts/Rubik-SemiBold.ttf);
-    font-weight: 300;
+    font-weight: 600;
 }
 
 $title_font: "Montserrat",

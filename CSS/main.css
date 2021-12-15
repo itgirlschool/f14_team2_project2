@@ -18,20 +18,26 @@
 
 @font-face {
   font-family: "Rubik";
+  src: url(/assets/fonts/Rubik-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Rubik";
   src: url(/assets/fonts/Rubik-Regular.ttf);
-  font-weight: 100;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Rubik";
   src: url(/assets/fonts/Rubik-Medium.ttf);
-  font-weight: 200;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Rubik";
   src: url(/assets/fonts/Rubik-SemiBold.ttf);
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .para {
@@ -123,7 +129,7 @@
 .text_bold {
   font-family: "Rubik", serif;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 400;
   letter-spacing: 1px;
   color: #489fb5;
 }
@@ -131,6 +137,20 @@
 @media (max-width: calc(768px - 0.02px)) {
   .text_bold {
     font-size: 16px;
+  }
+}
+
+.text {
+  font-family: "Rubik", serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #489fb5;
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .text {
+    font-size: 14px;
   }
 }
 
@@ -488,10 +508,6 @@
   }
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 .main-page {
   position: relative;
   display: -webkit-box;
@@ -568,8 +584,8 @@ html:focus-within {
   background-color: #16697a;
   height: 30px;
   width: 30px;
-  -webkit-box-shadow: 0px 3px 10px 5px #16697a;
-          box-shadow: 0px 3px 10px 5px #16697a;
+  -webkit-box-shadow: 0px 3px 10px 5px rgba(22, 105, 122, 0.4);
+          box-shadow: 0px 3px 10px 5px rgba(22, 105, 122, 0.4);
 }
 
 .button_round:hover {
@@ -899,6 +915,40 @@ html:focus-within {
 @media (max-width: 768px) {
   .high_screen_reviews {
     display: none;
+  }
+}
+
+.container_about_2 {
+  background-color: rgba(255, 166, 43, 0.2);
+}
+
+.card_about_2 {
+  min-height: 15vh;
+  background-color: #ffffff;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .card_about_2 {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.text_about_2 {
+  text-align: center;
+  color: #000000;
+}
+
+.photo_taisiay {
+  width: 100%;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .photo_taisiay {
+    border-radius: 0 0 20px 20px;
   }
 }
 
