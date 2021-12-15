@@ -3,7 +3,7 @@ window.onload = () => {
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0
+        threshold: 0.9
     }
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {

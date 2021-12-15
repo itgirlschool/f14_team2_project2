@@ -1,3 +1,4 @@
+$radius:15px;
 $gutter-social:$radius;
 
 $gutter-ab:7vw;
@@ -9,7 +10,7 @@ $gutter-ab:7vw;
     right: calc(#{$gutter-ab} - #{$radius} * 4);
     margin: auto;
 
-    top: calc(90vh - #{$radius} - 5px);
+    top: calc(90vh - #{$radius} - 10px);
 
     @include media-max-width(md) {
         display: none;

@@ -13,26 +13,23 @@ $title_mob: 600 60px "Montserrat",
 sans-serif;
 
 
+.main-title {
+    font: $title;
+    color: $main_color;
 
+    @include media-max-width(md) {
+        font: $title_mob;
+    }
+}
 
-// .main-title {
-//     font: $title;
+.sub-title {
+    font: $sub-title;
+    color: $accent_color;
 
-//     color: $main_color;
-
-//     @include media-max-width(md) {
-//         font: $title_mob;
-//     }
-// }
-
-//// .sub-title {
-//     font: $sub-title;
-//     color: $accent_color;
-
-//     @include media-max-width(md) {
-//         font: $sub-title_mob;
-//     }
-// }
+    @include media-max-width(md) {
+        font: $sub-title_mob;
+    }
+}
 
 .para {
     font: $para;
@@ -40,132 +37,5 @@ sans-serif;
 
     @include media-max-width(md) {
         font: $para-mob;
-    }
-}
-
-//h1
-.main-title {
-    font-family: $title_font;
-    font-size: 72px;
-    font-weight: 700;
-    color: $main_color;
-    // color: $light;
-
-    @include media-max-width(lg) {
-        font-size: 64px;
-    }
-
-    @include media-max-width(md) {
-        font-size: 54px;
-    }
-
-    @include media-max-width(sm) {
-        font-size: 48px;
-    }
-
-}
-
-//h2
-.title {
-    font-family: $title_font;
-    font-size: 64px;
-    font-weight: 500;
-    color: $main_color;
-
-
-    @include media-max-width(lg) {
-        font-size: 62px;
-    }
-
-    @include media-max-width(md) {
-        font-size: 48px;
-    }
-
-    @include media-max-width(sm) {
-        font-size: 46px;
-    }
-}
-
-//h3
-.sub-title {
-    font-family: $title_font;
-    font-size: 40px;
-    font-weight: 400;
-    color: $main_color;
-
-
-    @include media-max-width(lg) {
-        font-size: 38px;
-    }
-
-    @include media-max-width(md) {
-        font-size: 36px;
-    }
-
-    @include media-max-width(sm) {
-        font-size: 32px;
-    }
-}
-
-.text_bold {
-    font-family: $text_font;
-    font-size: 18px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-
-    color: $main_color;
-
-    @include media-max-width(md) {
-
-        font-size: 16px;
-    }
-
-
-}
-
-//todo прописать тоненький шрифт
-.text {
-    font-family: $text_font;
-    font-size: 16px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-
-    color: $main_color;
-
-    @include media-max-width(md) {
-
-        font-size: 14px;
-    }
-}
-
-.text_light {
-    color: $light;
-}
-
-.text_dark {
-    color: $dark;
-}
-
-.text_link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: $text_font;
-    font-size: 16px;
-}
-
-.text_ul {
-    font-family: $text_font;
-    font-size: 28px;
-
-    @include media-max-width(lg) {
-        font-size: 26px;
-    }
-
-    @include media-max-width(md) {
-        font-size: 24px;
-    }
-
-    @include media-max-width(sm) {
-        font-size: 20px;
     }
 }
