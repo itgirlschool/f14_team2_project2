@@ -1,7 +1,7 @@
-.container_about_1 {
+/*.container_about_1 {
     margin-bottom: 50px;
     margin-top: 50px;
-}
+}*/
 
 .bg-blue {
     background-color: $light-blue;
@@ -11,10 +11,8 @@
 
 .card-text {
     color: $dark;
-    font-size: 28px;
     padding-left: 0px;
     padding-right: 0px;
-    font-family: $text-font;
 }
 
 .card-title {
@@ -47,16 +45,15 @@
 .about-btn {
     border-radius: 50px;
     background-color: $accent_color;
-    font-size: 28px;
+
     margin-left: 20px;
     margin-top: 30px;
     padding: 10px 30px;
-}
-
-.button_about1 {
     text-decoration: none;
     color: $white;
 }
+
+
 
 
 
