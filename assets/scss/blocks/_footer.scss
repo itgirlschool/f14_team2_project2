@@ -1,0 +1,4 @@
+.footer__container {
+    background-color: $dark;
+    @include round-corner ($corner: lt);
+}

@@ -1,39 +1,46 @@
 @mixin round-corner($corner) {
     $corner-radius: 50px;
+    $value: get-corner(50px, $corner);
 
-    @include media-max-width(md) {
-        $corner-radius: 20px;
+
+    $value1: get-corner(20px, $corner);
+    border-radius: $value;
+    overflow: hidden;
+
+    @include media-max-width(sm) {
+        border-radius: $value1;
     }
 
-    //the order of corners: lt rt rb lb
-    //l-left, r- right, t-top,b-bottom
-    $corners:(all:$corner-radius,
-        lb_rb:0 0 $corner-radius $corner-radius,
-        lt_rt:$corner-radius $corner-radius 0 0,
-        lt_rb:$corner-radius 0,
-        lb_rt:0 $corner-radius,
-        lt_lb:$corner-radius 0 0 $corner-radius,
-        rt_rb: 0 $corner-radius $corner-radius 0,
-        0lt:0px $corner-radius $corner-radius,
-        0rt:$corner-radius 0px $corner-radius $corner-radius,
-        0lb: $corner-radius $corner-radius $corner-radius 0px,
-        0rb:$corner-radius $corner-radius 0,
-        lt:$corner-radius 0px 0px 0px,
-        rt:0px $corner-radius 0px 0px,
-        lb: 0px 0px 0px $corner-radius,
-        rb:0px 0px $corner-radius 0px);
-
-    @if map-has-key($corners, $corner) {
+}
 
 
-        $value: map-get($corners, $corner);
+@function get-corner($corner, $type-corner) {
+    $corners: (all:$corner,
+            lb_rb:0 0 $corner $corner,
+            lt_rt:$corner $corner 0 0,
+            lt_rb:$corner 0,
+            lb_rt:0 $corner,
+            lt_lb:$corner 0 0 $corner,
+            rt_rb: 0 $corner $corner 0,
+            0lt:0px $corner $corner,
+            0rt:$corner 0px $corner $corner,
+            0lb: $corner $corner $corner 0px,
+            0rb:$corner $corner 0,
+            lt:$corner 0px 0px 0px,
+            rt:0px $corner 0px 0px,
+            lb: 0px 0px 0px $corner,
+            rb:0px 0px $corner 0px);
 
-        border-radius: $value;
-        overflow: hidden;
+    @if map-has-key($corners, $type-corner) {
 
 
+        $value: map-get($corners, $type-corner);
+
+        @return $value;
     }
 }
+
+
 
 @mixin media-max-width($breakpoint) {
     @if map-has-keys($grid-breakpoints, $breakpoint) {
@@ -57,7 +64,7 @@
 }
 
 @mixin media-between ($breakpoint1, $breakpoint2) {
-    @if map-has-keys($grid-breakpoints, $breakpoint, $breakpoint2) {
+    @if map-has-keys($grid-breakpoints, $breakpoint1, $breakpoint2) {
         $value1: map-get($grid-breakpoints, $breakpoint1);
         $value2: map-get($grid-breakpoints, $breakpoint2);
         $value2: calc(#{$value2} - 0.02px);
@@ -65,5 +72,14 @@
         @media (min-width:$value1) and (max-width:$value2) {
             @content;
         }
+    }
+}
+
+@mixin btn-social-color ($color) {
+    box-shadow: 0px 0px 0px 5px rgba($color, 0.3);
+    background-color: $color;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 10px rgba($color, 0.3);
     }
 }

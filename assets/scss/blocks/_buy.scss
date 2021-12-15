@@ -1,0 +1,102 @@
+.buy {
+
+    &__button {
+
+        display: block;
+
+        img {
+            width: 100px;
+        }
+
+        @include media-min-width (xxl) {
+            position: relative;
+            top: 350px;
+            margin-left: 11%;
+            z-index: 2;
+        }
+
+        @include media-between (xl, xxl) {
+            position: relative;
+            top: 350px;
+            margin-left: 11%;
+            z-index: 2;
+        }
+
+        @include media-between (lg, xl) {
+            position: relative;
+            top: 330px;
+            margin-left: 10%;
+            z-index: 2;
+        }
+
+        @include media-between (xs, lg) {
+            position: relative;
+            top: 30px;
+            margin-left: 40%;
+            z-index: 2;
+        }
+    }
+
+    &__wrapper {
+        background-color: rgba(130, 192, 204, 0.2);
+        margin-bottom: 0px;
+
+        @include media-between (xs, lg) {
+            @include round-corner ($corner: all);
+        }
+    }
+
+    &__block_picture {
+        background-image: url(/assets/img/buy_img/buy_image.jpg);
+        height: 570px;
+        margin: 20px 0 20px -300px;
+        @include round-corner ($corner: rt);
+        background-position: center center;
+        background-size: 62%;
+        background-repeat: no-repeat;
+    }
+
+    &__block_orange {
+        z-index: 1;
+        background-color: $accent_color;
+        @include round-corner ($corner: 0rt);
+        margin-bottom: 10px;
+        height: 100%;
+        align-self: end;
+
+        @include media-between (xs, lg) {
+            @include round-corner ($corner: all);
+            margin-bottom: 0px;
+        }
+    }
+
+    &__text_header {
+        font-size: $sub-title;
+        color: $light;
+        padding: 25px;
+
+        @include media-max-width(sm) {
+            font-size: $sub-title_mob;
+        }
+
+        @include media-max-width(md) {
+            font-size: $sub-title_mob;
+        }
+    }
+
+    &__text_description,
+    &__text_description_collapse {
+        font-size: $para;
+        color: $light;
+        padding: 10px 20px 10px 20px;
+        margin: 10px;
+
+        @include media-max-width(sm) {
+            font-size: $para_mob;
+        }
+
+        @include media-max-width(md) {
+            font-size: $para_mob;
+        }
+    }
+}

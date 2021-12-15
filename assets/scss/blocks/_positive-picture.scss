@@ -1,0 +1,13 @@
+.positive_picture-container {
+  
+    margin: 30px 0 20px 0;
+    
+}
+.card-positive {
+    border: none;
+   
+}
+.card-img-bottom {
+    width: 100%;
+    @include round-corner ($corner: lb_rb)
+}
