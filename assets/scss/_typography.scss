@@ -33,6 +33,42 @@ sans-serif;
 
 .para {
     font: $para;
+.text_bold {
+    font-family: $text_font;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+    color: $main_color;
+
+    @include media-max-width(md) {
+
+        font-size: 16px;
+    }
+
+
+}
+
+//todo прописать тоненький шрифт
+.text {
+    font-family: $text_font;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+    color: $main_color;
+
+    @include media-max-width(md) {
+
+        font-size: 14px;
+    }
+}
+
+.text_light {
+    color: $light;
+}
+
+.text_dark {
     color: $dark;
 
     @include media-max-width(md) {
