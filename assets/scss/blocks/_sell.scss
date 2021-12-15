@@ -1,6 +1,3 @@
 .sell-img {
     @include round-corner ($corner: all);
 }
-.sell {
-    background-color: $dark;
-}
