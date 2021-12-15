@@ -145,6 +145,7 @@
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
+  line-height: 1;
   color: #489fb5;
 }
 
@@ -189,6 +190,17 @@
 @media (max-width: calc(576px - 0.02px)) {
   .text_ul {
     font-size: 20px;
+  }
+}
+
+.text_thin {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .text_thin {
+    font-size: 30px;
   }
 }
 
@@ -291,6 +303,7 @@
   background-color: rgba(130, 192, 204, 0.2);
   border-radius: 0px 0px 50px 0px;
   overflow: hidden;
+  border-color: rgba(130, 192, 204, 0.2);
 }
 
 @media (max-width: calc(576px - 0.02px)) {
@@ -308,17 +321,10 @@
 }
 
 .card-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 50px;
   margin-bottom: 25px;
   padding: 20px;
-}
-
-.card-text-items {
-  margin-left: 20px;
-  line-height: 60px;
 }
 
 .col-photo {
@@ -358,7 +364,7 @@
 
 .button_about1 {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 .card-text__item-animation {
@@ -384,127 +390,46 @@
   }
 }
 
-.buy__wrapper {
-  background-color: rgba(130, 192, 204, 0.2);
-  margin-bottom: 0px;
+.buy {
+  background-color: #ede7e3;
 }
 
-@media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
-  .buy__wrapper {
-    border-radius: 50px;
-    overflow: hidden;
+.buy__text {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.buy__header {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .buy__header {
+    text-align: center;
   }
 }
 
-@media (min-width: 0) and (max-width: calc(992px - 0.02px)) and (max-width: calc(576px - 0.02px)) {
-  .buy__wrapper {
-    border-radius: 20px;
+.buy__description {
+  text-align: left;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .buy__description {
+    text-align: center;
   }
 }
 
-.buy__block_picture {
-  height: 500px;
-  margin: 0 auto;
-}
-
-.buy__block_image {
-  height: 70%;
-  background-image: url(/assets/img/buy_img/buy_image.jpg);
+.buy__picture img {
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
   border-radius: 50px;
   overflow: hidden;
-  background-position: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__block_image {
+  .buy__picture img {
     border-radius: 20px;
-  }
-}
-
-.buy__block_main {
-  border-radius: 50px;
-  overflow: hidden;
-  height: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .buy__block_main {
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 0) and (max-width: calc(992px - 0.02px)) {
-  .buy__block_main {
-    border-radius: 50px;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-}
-
-@media (min-width: 0) and (max-width: calc(992px - 0.02px)) and (max-width: calc(576px - 0.02px)) {
-  .buy__block_main {
-    border-radius: 20px;
-  }
-}
-
-.buy__text_header {
-  display: inline-block;
-  position: relative;
-  font-size: 300 42px "Montserrat", sans-serif;
-  padding: 25px;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .buy__text_header {
-    font-size: 400 40px "Montserrat", sans-serif;
-  }
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .buy__text_header {
-    font-size: 400 40px "Montserrat", sans-serif;
-  }
-}
-
-.buy__text_header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 29px;
-  left: 26px;
-  right: 27px;
-  bottom: 26px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffa72b23), to(#ffa72bcb));
-  background: linear-gradient(to right, #ffa72b23, #ffa72bcb);
-  opacity: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-.buy__text_header:hover::before {
-  opacity: 1;
-}
-
-.buy__text_description {
-  font-size: 300 16px "Rubik", serif;
-  padding: 10px 20px 10px 20px;
-  margin: 10px;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .buy__text_description {
-    font-size: 400 18px "Rubik", serif;
-  }
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .buy__text_description {
-    font-size: 400 18px "Rubik", serif;
   }
 }
 
@@ -589,7 +514,6 @@
 }
 
 .button_round:hover {
-  color: #ede7e3;
   -webkit-animation: 0.5s ease-out both wipe;
           animation: 0.5s ease-out both wipe;
 }
@@ -598,10 +522,12 @@
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    color: #ede7e3;
   }
-  50% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+  100% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    color: #FFA62B;
   }
 }
 
@@ -609,10 +535,12 @@
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    color: #ede7e3;
   }
-  50% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+  100% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    color: #FFA62B;
   }
 }
 
