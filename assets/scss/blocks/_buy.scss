@@ -1,20 +1,21 @@
 .buy {
+
     background-color: $light;
 
-    &__text {
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
+    .title {
+        margin-bottom: 0;
 
-    &__header {
-        margin-bottom: 1.25rem;
+        @include media-max-width(md) {
+            text-align: center;
+        }
+
 
         @include media-max-width(sm) {
             text-align: center;
         }
     }
 
-    &__description {
+    &__text {
         text-align: left;
 
         @include media-max-width(sm) {
@@ -25,11 +26,13 @@
 
     &__picture {
 
+        @include media-max-width(md) {
+            width: 100%;
+        }
+
         img {
-            width: auto;
-            height: 31.25rem;
-            margin-top: 10%;
-            margin-bottom: 10%;
+            width: 400px;
+            height: 300px;
             @include round-corner(all);
 
             @include media-between (sm, md) {
