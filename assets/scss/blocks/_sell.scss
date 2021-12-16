@@ -1,3 +1,7 @@
 .sell-img {
     @include round-corner ($corner: all);
 }
+
+.reasons-title {
+    color: $accent_color;
+}
