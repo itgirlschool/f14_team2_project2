@@ -77,6 +77,11 @@ $gutter-ab:7vw;
     border-radius: 50%;
     border: $light 1px solid;
     transition: .2s ease-out;
+    text-decoration: none;
+
+    &:hover {
+        color: $light;
+    }
 
 }
 
