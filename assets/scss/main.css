@@ -397,14 +397,6 @@
 
 .footer__container {
   background-color: #16697a;
-  border-radius: 50px 0px 0px 0px;
-  overflow: hidden;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .footer__container {
-    border-radius: 20px 0px 0px 0px;
-  }
 }
 
 /*.container_about_1 {
@@ -547,8 +539,8 @@
   }
 }
 
-.education-title__header text-center {
-  color: #16697a;
+.education-card__center {
+  background-color: rgba(255, 166, 43, 0.2);
 }
 
 .main-page {
@@ -962,11 +954,11 @@
 }
 
 .container_about_2 {
-  background-color: rgba(255, 166, 43, 0.2);
+  background-color: rgba(255, 166, 43, 0.4);
 }
 
 .card_about_2 {
-  min-height: 15vh;
+  max-height: 25vh;
   background-color: #ffffff;
   border-radius: 0 0 50px 50px;
   overflow: hidden;
@@ -981,6 +973,19 @@
 .text_about_2 {
   text-align: center;
   color: #000000;
+  font-size: smaller;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+.picture_about_2 {
+  text-align: right;
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .picture_about_2 {
+    text-align: center;
+  }
 }
 
 .photo_taisiay {
@@ -993,6 +998,35 @@
   .photo_taisiay {
     border-radius: 0 0 20px 20px;
   }
+}
+
+@media (max-width: calc(992px - 0.02px)) {
+  .photo_taisiay {
+    padding-bottom: 3vh;
+  }
+}
+
+.picture_about_2 {
+  display: inline-block;
+  position: relative;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  .picture_about_2 {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.picture_about_2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 166, 43, 0.2);
 }
 
 .social {
