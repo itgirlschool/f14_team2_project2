@@ -73,7 +73,7 @@
 
 
     &:hover {
-        color: $light;
+        // color: $light;
         animation: 0.5s ease-out both wipe;
     }
 }
@@ -81,11 +81,15 @@
 @keyframes wipe {
     0% {
         transform: translateY(0%);
+        color: $light;
 
     }
 
-    50% {
-        transform: translateY(50%);
+
+
+    100% {
+        transform: translateY(30%);
+        color: $accent_color;
 
     }
 }
