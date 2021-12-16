@@ -128,6 +128,7 @@ sans-serif;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
+    line-height: 1;
 
     color: $main_color;
 
@@ -166,5 +167,14 @@ sans-serif;
 
     @include media-max-width(sm) {
         font-size: 20px;
+    }
+}
+
+.text_thin {
+    font-family: $title-font;
+    font-size: 36px;
+
+    @include media-max-width(md) {
+        font-size: 30px;
     }
 }
