@@ -1,0 +1,48 @@
+//  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(/assets/fonts/Rubik-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(/assets/fonts/Rubik-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(/assets/fonts/Rubik-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(/assets/fonts/Rubik-SemiBold.ttf);
+    font-weight: 600;
+}
+
+$title_font: "Montserrat",
+sans-serif;
+$text_font: "Rubik",
+serif;

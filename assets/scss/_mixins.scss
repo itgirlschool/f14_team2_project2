@@ -1,0 +1,85 @@
+@mixin round-corner($corner) {
+    $corner-radius: 50px;
+    $value: get-corner(50px, $corner);
+
+
+    $value1: get-corner(20px, $corner);
+    border-radius: $value;
+    overflow: hidden;
+
+    @include media-max-width(sm) {
+        border-radius: $value1;
+    }
+
+}
+
+
+@function get-corner($corner, $type-corner) {
+    $corners: (all:$corner,
+            lb_rb:0 0 $corner $corner,
+            lt_rt:$corner $corner 0 0,
+            lt_rb:$corner 0,
+            lb_rt:0 $corner,
+            lt_lb:$corner 0 0 $corner,
+            rt_rb: 0 $corner $corner 0,
+            0lt:0px $corner $corner,
+            0rt:$corner 0px $corner $corner,
+            0lb: $corner $corner $corner 0px,
+            0rb:$corner $corner 0,
+            lt:$corner 0px 0px 0px,
+            rt:0px $corner 0px 0px,
+            lb: 0px 0px 0px $corner,
+            rb:0px 0px $corner 0px);
+
+    @if map-has-key($corners, $type-corner) {
+
+
+        $value: map-get($corners, $type-corner);
+
+        @return $value;
+    }
+}
+
+
+
+@mixin media-max-width($breakpoint) {
+    @if map-has-keys($grid-breakpoints, $breakpoint) {
+        $value: map-get($grid-breakpoints, $breakpoint);
+        $value: calc(#{$value} - 0.02px);
+
+        @media (max-width:$value) {
+            @content;
+        }
+    }
+}
+
+@mixin media-min-width($breakpoint) {
+    @if map-has-keys($grid-breakpoints, $breakpoint) {
+        $value: map-get($grid-breakpoints, $breakpoint);
+
+        @media (min-width:$value) {
+            @content;
+        }
+    }
+}
+
+@mixin media-between ($breakpoint1, $breakpoint2) {
+    @if map-has-keys($grid-breakpoints, $breakpoint1, $breakpoint2) {
+        $value1: map-get($grid-breakpoints, $breakpoint1);
+        $value2: map-get($grid-breakpoints, $breakpoint2);
+        $value2: calc(#{$value2} - 0.02px);
+
+        @media (min-width:$value1) and (max-width:$value2) {
+            @content;
+        }
+    }
+}
+
+@mixin btn-social-color ($color) {
+    box-shadow: 0px 0px 0px 5px rgba($color, 0.3);
+    background-color: $color;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 10px rgba($color, 0.3);
+    }
+}
