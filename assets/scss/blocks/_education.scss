@@ -3,13 +3,45 @@
 }
 
 .education-title__header {
-    color: green;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font: $title;
+    font: $text-font;
+    color: $header-color;
 }
 
-.education-card__center {
-    background-color: rgba($accent_color, 0.4);
+.education-title__subtitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font: $sub-title;
+    text-align: center;
 }
 
 .education-card {
-    background-color: $dark;
+    color: $dark;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.education-card__icon {
+    width: 90px;
+    height: 100px;
+}
+
+.education-card__title {
+    font: $para;
+    color: $dark
+}
+
+
+.education-card__subtitle {
+    font: Rubik;
+
+}
+
+.education-card__center {
+    background-color: $accent_color;
 }

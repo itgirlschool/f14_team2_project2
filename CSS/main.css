@@ -531,15 +531,45 @@
 }
 
 .education-title__header {
-  color: green;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font: 500 64px "Montserrat", sans-serif;
+  font: "Rubik", serif;
+  color: #275763;
 }
 
-.education-card__center {
-  background-color: rgba(255, 166, 43, 0.4);
+.education-title__subtitle {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font: 300 42px "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .education-card {
-  background-color: #16697a;
+  color: #16697a;
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.education-card__icon {
+  width: 90px;
+  height: 100px;
+}
+
+.education-card__title {
+  font: 300 16px "Rubik", serif;
+  color: #16697a;
+}
+
+.education-card__subtitle {
+  font: Rubik;
+}
+
+.education-card__center {
+  background-color: #FFA62B;
 }
 
 .main-page {
