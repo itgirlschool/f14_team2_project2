@@ -766,6 +766,10 @@
   }
 }
 
+.reasons-title {
+  color: #FFA62B;
+}
+
 .reviews__header {
   text-align: left;
   margin-bottom: 20px;
@@ -1152,4 +1156,3 @@
   -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 136, 204, 0.3);
           box-shadow: 0px 0px 0px 10px rgba(0, 136, 204, 0.3);
 }
-/*# sourceMappingURL=main.css.map */
