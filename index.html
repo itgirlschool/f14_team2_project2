@@ -18,12 +18,12 @@
   <!--Header start-->
   <header>
     <div class="header_full">
-      <nav class="navbar navbar-header navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-header navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid container_fullscreen">
           <div class="navbar-nav justify-content-around align-items-center m-0 p-0">
             <a class="navbar-item navbar-item_visual" href="#about_1">ОБО МНЕ</a>
 
-            <a class="navbar-item navbar-item_visual" href="#sale">
+            <a class="navbar-item navbar-item_visual" href="#sell">
               Продать
             </a>
             <a class="navbar-item navbar-item_visual" href="#buy">
@@ -35,12 +35,15 @@
             <a class="navbar-item navbar-item_visual" href="#education">
               Обучение
             </a>
+            <a class="navbar-item navbar-item_visual" href="#reviews">
+              Отзывы
+            </a>
             <a class="navbar-item navbar-item_visual" href="#contacts">
               Контакты
             </a>
-            <p class="navbar-item navbar-item_visual item-visual_tel-hover">
-              <a href="tel:+79780069390">+79780069390</a><br />
-              <a href="tel:+79786325945">+79786325945</a>
+            <p class="navbar-item navbar-item_numbers item-visual_tel-hover justify-content-center">
+              <a class="navbar-item_numbers" href="tel:+79780069390">+79780069390</a><br />
+              <a class="navbar-item_numbers" href="tel:+79786325945">+79786325945</a>
             </p>
           </div>
         </div>
@@ -55,32 +58,38 @@
       <nav class="navbar-header navbar fixed-top">
         <div class="collapse navbar-header navbar_margin-items navbar-nav align-items-center"
           id="navbarToggleExternalContent">
-          <a class="navbar-item navbar-item_visual" href="#about_1">ОБО МНЕ</a>
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#about_1">ОБО МНЕ</a>
 
-          <a class="navbar-item navbar-item_visual" href="#sale">
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#sell">
             Продать
           </a>
-          <a class="navbar-item navbar-item_visual" href="#buy">
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#buy">
             Купить
           </a>
-          <a class="navbar-item navbar-item_visual" href="#rent">
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#rent">
             Аренда
           </a>
-          <a class="navbar-item navbar-item_visual" href="#education">
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#education">
             Обучение
           </a>
-          <a class="navbar-item navbar-item_visual" href="#contacts">
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#reviews">
+            Отзывы
+          </a>
+          <a class="navbar-item navbar-item_visual navbar-item_margin-mobile" href="#contacts">
             Контакты
           </a>
         </div>
 
-        <button class="navbar-toggler navbar-toggler_visual" type="button" data-bs-toggle="collapse"
-          href="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon toggler-icon_custom">
-            <i class="fas fa-bars icon_custom"></i>
-          </span>
-        </button>
+        <a class="navbar-toggler navbar-toggler_visual" data-bs-toggle="collapse" href="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false">
+
+          <div class="toggler-icon icon">
+            <span class="icon_element-bar"></span>
+            <span class="icon_element-bar"></span>
+            <span class="icon_element-bar"></span>
+          </div>
+
+        </a>
         <p class="navbar-item navbar-item_visual item-visual_tel-hover">
           <a href="tel:+79780069390">+79780069390</a><br />
           <a href="tel:+79786325945">+79786325945</a>
@@ -140,10 +149,9 @@
                     знаниями с вами на обучающих курсах и консультациях</li>
                   <li class="card-text__item">Богиня в посуточной сдаче жилья: быстро и то, что нужно именно Вам!</li>
                 </ul>
-                
-                <a class="btn  text-white about-btn  text_ul"
-                    href="#contacts">ЗАДАТЬ
-                    МНЕ ВОПРОС</a>
+
+                <a class="btn  text-white about-btn  text_ul" href="#contacts">ЗАДАТЬ
+                  МНЕ ВОПРОС</a>
 
               </div>
             </div>
@@ -160,9 +168,9 @@
           <div class="col">
             <div class="card card-positive">
               <div class="card-body card-body-positive">
-               
-              <img class="card-img-bottom" src="assets/img/positive-picture_img/womanattheseashore.jpg"
-                alt="woman at the seashore">
+
+                <img class="card-img-bottom" src="assets/img/positive-picture_img/womanattheseashore.jpg"
+                  alt="woman at the seashore">
                 <h4 class="card-title card-title-positive text-center main-title">Почему клиенты обращаются снова и
                   рекомендуют меня друзьям</h4>
               </div>
@@ -236,35 +244,36 @@
 
     <!--Sale start-->
     <section class="sell container-fluid py-5 px-4" id="sell" data-color="#82c0cc">
-    <div class="container sell-container">
-          <div class="row flex-lg-row-reverse g-5 py-5">
-            <div class="col-10 col-lg-6 col-sm-8">
-              <img class="sell-img img-fluid mx-lg-auto d-block" src="assets/img/sell_img/crimea_sell.jpg"
-                alt="crimea seashore" width="700" height="500">
-            </div>
-            <div class="col-lg-6">
-              <div class="container-sell-text">
-                <h2 class="main-title">Продать</h2>
-                <p class="para">Вы решили продать свой объект недвижимости и не знаете, как это лучше сделать? Тогда вам
-                  ко мне! Я смогу проконсультировать вас по всей документации, необходимой для подготовки объекта к
-                  продаже, а также подготовлю ваш
-                  объект со своей командой для того, чтобы эффективность и скорость его продажи была максимально быстрой
-                  и выгодной!</p>
-                  <p class="para text-uppercase">7 причин доверить мне продажу своей квартиры или дома</p>
-                <ol>
+      <div class="container sell-container">
+        <div class="row flex-lg-row-reverse g-5 py-5">
+          <div class="col-10 col-lg-6 col-sm-8">
+            <img class="sell-img img-fluid mx-lg-auto d-block" src="assets/img/sell_img/crimea_sell.jpg"
+              alt="crimea seashore" width="700" height="500">
+          </div>
+          <div class="col-lg-6">
+            <div class="container-sell-text">
+              <h2 class="main-title">Продать</h2>
+              <p class="para">Вы решили продать свой объект недвижимости и не знаете, как это лучше сделать? Тогда вам
+                ко мне! Я смогу проконсультировать вас по всей документации, необходимой для подготовки объекта к
+                продаже, а также подготовлю ваш
+                объект со своей командой для того, чтобы эффективность и скорость его продажи была максимально быстрой
+                и выгодной!</p>
+              <p class="para text-uppercase">7 причин доверить мне продажу своей квартиры или дома</p>
+              <ol>
                 <li class="para">Оплата только за результат.</li>
                 <li class="para">Только профессиональная фотосъемка недвижимости.</li>
                 <li class="para">Реклама объектов на всех ведущих сайтах.</li>
                 <li class="para">Проверка и сбор всех документов для сделки.</li>
                 <li class="para">Вы сами принимаете решение о цене недвижимости.</li>
                 <li class="para">Я не навязываю своего мнения.</li>
-                <li class="para">Моя цель - предоставить реальную информацию об объекте и качественно сделать свою работу.</li>
+                <li class="para">Моя цель - предоставить реальную информацию об объекте и качественно сделать свою
+                  работу.</li>
               </ol>
-              </div>
             </div>
           </div>
         </div>
-      
+      </div>
+
     </section>
     <!--Sale end-->
 
@@ -286,7 +295,7 @@
             <img src="assets/img/buy_img/buy_image.jpg" alt="buy-pic" class="mx-auto  d-inline-block">
           </div>
         </div>
-        </div>
+      </div>
     </section>
     <!--Buy end-->
 
@@ -458,6 +467,7 @@
   <script src="https://kit.fontawesome.com/03971be3aa.js" crossorigin="anonymous"></script>
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/changing_background copy.js"></script>
+  <script src="assets/js/header_animation.js"></script>
 </body>
 
 </html>
