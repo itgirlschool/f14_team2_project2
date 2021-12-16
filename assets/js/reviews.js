@@ -29,4 +29,7 @@ prev.addEventListener("click", e => {
 let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
+
+
 //REVIEWS END
+

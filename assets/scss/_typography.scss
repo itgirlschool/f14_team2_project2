@@ -107,9 +107,9 @@ sans-serif;
     font-family: $text_font;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1;
-    color: $dark;
+    // letter-spacing: 1px;
+    // line-height: 1;
+    color: $black;
     @include media-max-width(md) {
         font-size: 14px;
     }
@@ -147,7 +147,6 @@ sans-serif;
 .text_thin {
     font-family: $title-font;
     font-size: 36px;
-
     @include media-max-width(md) {
         font-size: 30px;
     }
