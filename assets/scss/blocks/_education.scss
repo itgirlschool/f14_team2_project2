@@ -1,49 +1,40 @@
-.education container-fluid {
-    width: 100%;
+// .education container-fluid {
+//     width: 100%;
+// }
+
+// .card bg-blue {
+//     background-color: $light-blue;
+//     @include round-corner(rb);
+//     border-color: $light-blue;
+//     margin-top: 30px;
+//     margin-bottom: 30px;
+// }
+
+.education-title__header text-center {
+    color: $dark // font-family: "Montserrat", sans-serif;
+        // font-size: 36px;
+        // padding: 20px;
 }
 
-.card bg-blue {
-    background-color: $light-blue;
-    @include round-corner(rb);
-    border-color: $light-blue;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+// .education-title__body {
+//     color: $light
+//     font-family: "Montserrat", sans-serif;
+//     font-size: 15px;
+// }
 
-&__main-title {
-    color: #489fb5;
-    margin-top: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    padding: 20px;
-}
+// .education-card__icon {
+//     position: relative;
+//     width: 50px;
+//     height: 60px;
+// }
 
-&__body-title {
-    color: $accent_color;
-    letter-spacing: 5px;
-}
+// .education-card__title {
+//     position: relative;
+//     display: flex;
+//     height: 100vh;
+//     @include round-corner(lb_rb);
+// }
 
-.education-title body-title {
-    font: 200 30 px "Rubik", sans-serif;
-    color: #FFA62B;
-}
-
-.education-title_icon {
-    position: relative;
-    width: 50px;
-    height: 60px;
-}
-
-.education-card__title {
-    position: relative;
-    display: flex;
-    height: 100vh;
-    @include round-corner(lb_rb);
-}
-
-.education-card__center {
-    background-color: white;
-}
+// .education-card__center {
+//     background-color: white;
+// }
