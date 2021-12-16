@@ -1,3 +1,15 @@
+.container_education {
+    background-color: $bright;
+}
+
+.education-title__header {
+    color: green;
+}
+
 .education-card__center {
-    background-color: rgba($accent_color, 0.2);
+    background-color: rgba($accent_color, 0.4);
+}
+
+.education-card {
+    background-color: $dark;
 }
