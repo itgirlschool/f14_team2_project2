@@ -33,14 +33,14 @@ sans-serif;
 //     }
 // }
 
-.para {
-    font: $para;
-    color: $dark;
+// .para {
+//     font: $para;
+//     color: $dark;
 
-    @include media-max-width(md) {
-        font: $para-mob;
-    }
-}
+//     @include media-max-width(md) {
+//         font: $para-mob;
+//     }
+// }
 
 //h1
 .main-title {
@@ -127,10 +127,10 @@ sans-serif;
     font-family: $text_font;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1;
+    // letter-spacing: 1px;
+    // line-height: 1;
 
-    color: $main_color;
+    color: $black;
 
     @include media-max-width(md) {
 
