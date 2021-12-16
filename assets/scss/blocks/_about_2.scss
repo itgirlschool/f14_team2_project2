@@ -1,7 +1,3 @@
-// .about_2 {
-//     max-height: 100vh;
-// }
-
 .container_about_2 {
     background-color: rgba($accent_color, 0.4);
 }
@@ -16,12 +12,38 @@
     text-align: center;
     color: $black;
     font-size: smaller;
-    // letter-spacing: 0px;
-    // font-weight: 700;
+    line-height: 1;
+}
+
+.text_about_2 {
+    text-align: center;
+    color: $black;
+}
+
+.container_picture {
+    text-align: center;
+
+    @include media-max-width(md) {
+        text-align: center;
+    }
 }
 
 .picture_about_2 {
-    text-align: right;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+
+    @include round-corner ($corner: lb_rb);
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba($accent_color, 0.3);
+    }
 }
 
 .photo_taisiay {
@@ -31,26 +53,4 @@
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
-}
-
-.container_picture {
-    width: 100%;
-    text-align: center;
-}
-
-.picture_about_2 {
-    width: 80%;
-    display: inline-block;
-    position: relative;
-    @include round-corner ($corner: lb_rb)
-}
-
-.picture_about_2:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba($accent_color, 0.3);
 }
