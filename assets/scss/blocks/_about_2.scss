@@ -1,9 +1,9 @@
-.about_2 {
-    min-height: 100vh;
-}
+// .about_2 {
+//     min-height: 100vh;
+// }
 
 .container_about_2 {
-    background-color: rgba($accent_color, 0.2);
+    background-color: rgba($accent_color, 0.4);
 }
 
 .card_about_2 {
@@ -17,6 +17,7 @@
     color: $black;
     font-size: smaller;
     letter-spacing: 0px;
+    font-weight: 700;
 }
 
 .picture_about_2 {
@@ -28,10 +29,26 @@
 }
 
 .photo_taisiay {
-    width: 80%;
+    width: 100%;
     @include round-corner ($corner: lb_rb);
 
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
+}
+
+.picture_about_2 {
+    display: inline-block;
+    position: relative;
+    @include round-corner ($corner: lb_rb)
+}
+
+.picture_about_2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($accent_color, 0.2);
 }
