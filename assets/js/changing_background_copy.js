@@ -8,13 +8,18 @@ $(window).on("scroll touchmove", function() {
     var rentscroll = '#f0f0f0';
     var rentmain = '#eddde2';
 
-    var reviewsscroll = '#eddde2';
+    var educationscroll = '#f0f0f0';
+    var educationmain = '#eddde2';
+
+    var reviewsscroll = '#f0f0f0';
     var reviewsmain = '#82c0cc';
 
     changeColor("#sell", '.sell', sellmain, sellonscroll);
     changeColor("#buy", '.buy', buymain, buyscroll);
     changeColor("#rent", '.rent', rentmain, rentscroll);
+    changeColor("#education", '.education', educationscroll, educationmain);
     changeColor("#reviews", '.reviews', reviewsmain, reviewsscroll);
+
 
 });
 

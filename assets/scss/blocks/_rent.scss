@@ -1,28 +1,57 @@
-.rent img {
-    @include round-corner ($corner: all);
-}
-
-body {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.rent-text__header {
-    @media (min-width: map-get($grid-breakpoints, lg)) {
-        background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
-        background-repeat: no-repeat;
-        background-size: 200% 51%;
-        background-position: top left, bottom right;
-        -webkit-background-clip: text, text, padding-box, padding-box;
-        background-clip: text, text, padding-box, padding-box;
-        transition: 0.8s
+    .rent img {
+        @include round-corner ($corner: all);
     }
-}
-
-.rent-text__header:hover {
-    @media (min-width: map-get($grid-breakpoints, lg)) {
-        background-position: top right, bottom left;
+    
+    body {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
     }
-}
+    
+    .rent-text__header {
+        @media (min-width: map-get($grid-breakpoints, lg)) {
+            background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
+            background-repeat: no-repeat;
+            background-size: 200% 51%;
+            background-position: top left, bottom right;
+            -webkit-background-clip: text, text, padding-box, padding-box;
+            background-clip: text, text, padding-box, padding-box;
+            transition: 0.8s
+        }
+    }
+    
+    .rent-text__header:hover {
+        @media (min-width: map-get($grid-breakpoints, lg)) {
+            background-position: top right, bottom left;
+        }
+    }
+    
+    .rent-btn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: $accent_color;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+    }
+    
+    #right-btn {
+        transform: translate(-50%, -50%);
+        margin: 30px 0px 0px 140px;
+    }
+    
+    #left-btn {
+        margin: 30px 0px 0px 50px;
+        transform: translate(50%, -50%);
+    }
+    
+    #carousel_2 {
+        width: 100%;
+        max-height: 400px;
+        z-index: 1;
+    }
