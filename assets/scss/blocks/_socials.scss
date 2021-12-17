@@ -1,4 +1,4 @@
-$radius:15px;
+$radius:20px;
 $gutter-social:$radius;
 
 $gutter-ab:7vw;
@@ -12,9 +12,9 @@ $gutter-ab:7vw;
 
     top: calc(90vh - #{$radius} - 5px);
 
-    @include media-max-width(md) {
-        display: none;
-    }
+    // @include media-max-width(md) {
+    //     display: none;
+    // }
 
     @include media-max-width(lg) {
         right:calc(#{$gutter-ab} - #{$radius} * 2);
@@ -91,8 +91,29 @@ $gutter-ab:7vw;
     height: calc(#{$radius} * 2);
     margin: $gutter-social;
     z-index: 30;
+    animation: 10s ease-in-out pulse infinite;
+}
+
+@keyframes pulse {
+    0% {
+
+        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+    }
+
+    83.33% {
+        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+    }
+
+    90% {
+        box-shadow: 0px 0px 0px 10px rgba($accent_color, 0.3);
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+    }
 
 }
+
 
 .btn-social_viber {
     @include btn-social-color ($color-social-viber);
