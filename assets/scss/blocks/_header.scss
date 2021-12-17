@@ -27,7 +27,7 @@
 
 .navbar_background-color {
     background-color: rgba($header-color, $alpha: 1);
-    color: $light;
+    color: $white;
     transition: all 0.5s;
 }
 
@@ -51,7 +51,6 @@
     margin: 0 30px 0 0;
     text-decoration: none;
     text-transform: uppercase;
-    font: $para;
     color: $dark;
     border-bottom: 2px solid transparent;
     transition: all 0.5s;
@@ -71,8 +70,7 @@
 
     a {
         text-decoration: none;
-        font: $para;
-        color: $light;
+        color: $white;
     }
 }
 
@@ -81,15 +79,13 @@
     margin: 0 30px 0 0;
     text-decoration: none;
     text-transform: uppercase;
-    font: $para;
     color: $dark;
     border-bottom: 2px solid transparent;
     transition: all 0.5s;
 
     a {
         text-decoration: none;
-        font: $para;
-        color: $light;
+        color: $white;
     }
 }
 
@@ -98,12 +94,11 @@
     margin: 0 30px 0 0;
     text-decoration: none;
     text-transform: uppercase;
-    font: $para;
-    color: $light;
+    color: $white;
 
     &:hover {
-        color: $light;
-        border-bottom: 2px solid $light;
+        color: $white;
+        border-bottom: 2px solid $white;
     }
 
 }
@@ -113,7 +108,6 @@
     margin: 0 30px 0 0;
     text-decoration: none;
     text-transform: uppercase;
-    font: $para;
     color: $dark;
     border-bottom: 2px solid transparent;
     transition: all 0.5s;
@@ -137,21 +131,21 @@
 }
 
 .navbar-item_visual-scroll {
-    color: $light;
+    color: $white;
     transition: all 0.5s;
 
     &:hover {
-        color: $light;
-        border-bottom: 2px solid $light;
+        color: $white;
+        border-bottom: 2px solid $white;
     }
 }
 
 .visual-no-hover_scroll {
-    color: $light;
+    color: $white;
     transition: all 0.5s;
 
     &:hover {
-        color: $light;
+        color: $white;
         border-bottom: 2px solid transparent;
     }
 }
@@ -168,13 +162,13 @@
 }
 
 .icon_custom {
-    color: $light;
+    color: $white;
     font-size: 40px;
 }
 
 .icon_element-bar {
 
-    background-color: $light;
+    background-color: $white;
     width: 30px;
     height: 3px;
     position: relative;
