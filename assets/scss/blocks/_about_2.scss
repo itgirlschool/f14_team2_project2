@@ -1,54 +1,55 @@
-// .about_2 {
-//     min-height: 100vh;
-// }
-
 .container_about_2 {
-    background-color: rgba($accent_color, 0.4);
+    background-color: $background-color;
 }
 
 .card_about_2 {
-    max-height: 25vh;
-    background-color: $white;
-    @include round-corner ($corner: lb_rb);
+    max-width: 18rem;
+    height: 15rem;
+
+    @include media-max-width(md) {
+        max-width: 100%;
+        height: 10rem;
+    }
+
+    @include media-between(lg, xl) {
+        height: 20rem;
+    }
+
+    @include media-between(xsm, sm) {
+        height: 13rem;
+    }
+
+    @include media-between(xs, xsm) {
+        height: 20rem;
+    }
 }
 
 .text_about_2 {
     text-align: center;
     color: $black;
-    font-size: smaller;
-    letter-spacing: 0px;
-    font-weight: 700;
+}
+
+.text_about_2 {
+    text-align: center;
+    color: $black;
+}
+
+.container_picture {
+    text-align: center;
 }
 
 .picture_about_2 {
-    text-align: right;
+    width: 100%;
 
-    @include media-max-width(md) {
-        text-align: center;
+    @include media-between(md, lg) {
+        margin-top: 2vh;
     }
 }
 
 .photo_taisiay {
     width: 100%;
-    @include round-corner ($corner: lb_rb);
 
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
-}
-
-.picture_about_2 {
-    display: inline-block;
-    position: relative;
-    @include round-corner ($corner: lb_rb)
-}
-
-.picture_about_2:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba($accent_color, 0.2);
 }

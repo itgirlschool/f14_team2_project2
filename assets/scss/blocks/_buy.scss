@@ -1,9 +1,7 @@
 .buy {
-
     background-color: $light;
 
     .title {
-        margin-bottom: 0;
 
         @include media-max-width(md) {
             text-align: center;
@@ -26,21 +24,11 @@
 
     &__picture {
 
-        @include media-max-width(md) {
-            width: 100%;
-        }
-
         img {
-            width: 400px;
-            height: 300px;
+            overflow: hidden;
+            width: 700px;
+            height: 500px;
             @include round-corner(all);
-
-            @include media-between (sm, md) {
-                margin: 0;
-                margin-bottom: 10%;
-
-            }
         }
-
     }
 }

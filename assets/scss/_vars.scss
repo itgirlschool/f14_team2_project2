@@ -6,20 +6,14 @@ $accent_color: #FFA62B;
 $main_color:#489fb5;
 $light-blue: rgba(130, 192, 204, 0.2);
 $header-color:#275763;
+$background-color: #EDDDE2;
 $color-social-viber:#7360f2;
 $color-social-whatsup:#43d854;
 $color-social-telegram:#0088cc;
-$black: #000000;
+$black: #191e27;
 $white: #ffffff;
 // These breakpoints are taken from bootstrap 
 // for use it you can write  map-get($grid-breakpoints, md)
 //ex:  @media (max-width:map-get($grid-breakpoints, md))
-
-$grid-breakpoints: (xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px);
-
+$grid-breakpoints: (xs: 0, xsm: 320px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
 $radius:15px;

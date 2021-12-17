@@ -1,14 +1,14 @@
-$(window).on("scroll touchmove", function () {
-    var sellonscroll = '#ede7e8';
+$(window).on("scroll touchmove", function() {
+    var sellonscroll = '#eddde2';
     var sellmain = '#82c0cc';
 
-    var buyscroll = '#ede7e3';
-    var buymain = '#82c0cc';
+    var buyscroll = '#82c0cc';
+    var buymain = '#f0f0f0';
 
-    var rentscroll = '#ede7e3';
-    var rentmain = '#82c0cc';
+    var rentscroll = '#f0f0f0';
+    var rentmain = '#eddde2';
 
-    var reviewsscroll = '#ede7e8';
+    var reviewsscroll = '#eddde2';
     var reviewsmain = '#82c0cc';
 
     changeColor("#sell", '.sell', sellmain, sellonscroll);
