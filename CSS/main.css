@@ -1115,20 +1115,14 @@ body {
 .social {
   position: fixed;
   z-index: 20;
-  right: calc(7vw - 15px * 4);
+  right: calc(7vw - 20px * 4);
   margin: auto;
-  top: calc(90vh - 15px - 5px);
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .social {
-    display: none;
-  }
+  top: calc(90vh - 20px - 5px);
 }
 
 @media (max-width: calc(992px - 0.02px)) {
   .social {
-    right: calc(7vw - 15px * 2);
+    right: calc(7vw - 20px * 2);
   }
 }
 
@@ -1151,9 +1145,9 @@ body {
 }
 
 .social__position_elements {
-  margin-right: calc(-15px * 2);
-  padding-right: calc(15px * 2);
-  height: calc(15px * 2 + 15px * 2);
+  margin-right: calc(-20px * 2);
+  padding-right: calc(20px * 2);
+  height: calc(20px * 2 + 20px * 2);
 }
 
 .social-all {
@@ -1166,7 +1160,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 15px;
+  gap: 20px;
   opacity: 0;
   -webkit-transform-origin: right center;
           transform-origin: right center;
@@ -1184,8 +1178,8 @@ body {
 }
 
 .btn-social {
-  height: calc(15px * 2);
-  width: calc(15px * 2);
+  height: calc(20px * 2);
+  width: calc(20px * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1200,21 +1194,66 @@ body {
   border: #ede7e3 1px solid;
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
+  text-decoration: none;
+}
+
+.btn-social:hover {
+  color: #ede7e3;
 }
 
 .btn-social_all {
   -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
           box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
   background-color: #FFA62B;
-  width: calc(15px * 2);
-  height: calc(15px * 2);
-  margin: 15px;
+  width: calc(20px * 2);
+  height: calc(20px * 2);
+  margin: 20px;
   z-index: 30;
+  -webkit-animation: 10s ease-in-out pulse infinite;
+          animation: 10s ease-in-out pulse infinite;
 }
 
 .btn-social_all:hover {
   -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
           box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
+  83.33% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
+  90% {
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
+  83.33% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
+  90% {
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 10px rgba(255, 166, 43, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+            box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
+  }
 }
 
 .btn-social_viber {
