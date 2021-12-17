@@ -1111,6 +1111,12 @@ body {
   top: calc(90vh - 20px - 5px);
 }
 
+@media (max-width: calc(768px - 0.02px)) {
+  .social {
+    display: none;
+  }
+}
+
 @media (max-width: calc(992px - 0.02px)) {
   .social {
     right: calc(7vw - 20px * 2);

@@ -12,9 +12,9 @@ $gutter-ab:7vw;
 
     top: calc(90vh - #{$radius} - 5px);
 
-    // @include media-max-width(md) {
-    //     display: none;
-    // }
+    @include media-max-width(md) {
+        display: none;
+    }
 
     @include media-max-width(lg) {
         right:calc(#{$gutter-ab} - #{$radius} * 2);
