@@ -1,19 +1,15 @@
-.container_education {
-    background-color: $bright;
-}
+// .education container-fluid {
+//     background-color: $bright;
+// }
 
 .education-title__header {
     margin-top: 30px;
     margin-bottom: 20px;
-    font: $title;
-    // color: $header-color;
 }
 
 .education-title__subtitle {
     margin-top: 30px;
     margin-bottom: 20px;
-    font: $sub-title;
-    text-align: center;
 }
 
 .container education-card {
@@ -28,16 +24,9 @@
 }
 
 .card-icon {
-    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     width: 125px;
     height: 100px;
-}
-
-.card-title {
-    font: $para;
-    color: $dark
-}
-
-.card-text {
-    font: Rubik;
 }
