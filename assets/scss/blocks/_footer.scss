@@ -1,4 +1,7 @@
 .footer__container {
     background-color: $dark;
-    @include round-corner ($corner: lt);
+}
+
+.footer_text {
+    font-size: smaller;
 }

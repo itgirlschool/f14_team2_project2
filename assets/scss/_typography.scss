@@ -11,34 +11,22 @@ serif;
 $title_mob: 600 60px "Montserrat",
 sans-serif;
 
-
-
-
-// .main-title {
-//     font: $title;
-
-//     color: $main_color;
-
-//     @include media-max-width(md) {
-//         font: $title_mob;
-//     }
 // }
-
-//// .sub-title {
-//     font: $sub-title;
-//     color: $accent_color;
-
-//     @include media-max-width(md) {
-//         font: $sub-title_mob;
-//     }
-// }
-
 .para {
     font: $para;
-    color: $dark;
+    color: $black;
+    font-size: 22px;
+
+    @include media-max-width(lg) {
+        font-size: 20px;
+    }
 
     @include media-max-width(md) {
-        font: $para-mob;
+        font-size: 18px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 16px;
     }
 }
 
@@ -47,9 +35,9 @@ sans-serif;
     font-family: $title_font;
     font-size: 72px;
     font-weight: 700;
-    color: $main_color;
-    // color: $light;
+    color: $dark;
 
+    // color: $light;
     @include media-max-width(lg) {
         font-size: 64px;
     }
@@ -61,7 +49,6 @@ sans-serif;
     @include media-max-width(sm) {
         font-size: 48px;
     }
-
 }
 
 //h2
@@ -69,8 +56,7 @@ sans-serif;
     font-family: $title_font;
     font-size: 64px;
     font-weight: 500;
-    color: $main_color;
-
+    color: $dark;
 
     @include media-max-width(lg) {
         font-size: 62px;
@@ -90,8 +76,7 @@ sans-serif;
     font-family: $title_font;
     font-size: 40px;
     font-weight: 400;
-    color: $main_color;
-
+    color: $dark;
 
     @include media-max-width(lg) {
         font-size: 38px;
@@ -111,15 +96,11 @@ sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
-
-    color: $main_color;
+    color: $dark;
 
     @include media-max-width(md) {
-
         font-size: 16px;
     }
-
-
 }
 
 //todo прописать тоненький шрифт
@@ -127,13 +108,11 @@ sans-serif;
     font-family: $text_font;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1;
-
-    color: $main_color;
+    // letter-spacing: 1px;
+    // line-height: 1;
+    color: $black;
 
     @include media-max-width(md) {
-
         font-size: 14px;
     }
 }
