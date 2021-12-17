@@ -10,30 +10,21 @@ $para_mob:400 18px "Rubik",
 serif;
 $title_mob: 600 60px "Montserrat",
 sans-serif;
-// .main-title {
-//     font: $title;
-//     color: $main_color;
-//     @include media-max-width(md) {
-//         font: $title_mob;
-//     }
-// }
-//// .sub-title {
-//     font: $sub-title;
-//     color: $accent_color;
-//     @include media-max-width(md) {
-//         font: $sub-title_mob;
-//     }
+
 // }
 .para {
     font: $para;
     color: $black;
     font-size: 22px;
+
     @include media-max-width(lg) {
         font-size: 20px;
     }
+
     @include media-max-width(md) {
         font-size: 18px;
     }
+
     @include media-max-width(sm) {
         font-size: 16px;
     }
@@ -45,13 +36,16 @@ sans-serif;
     font-size: 72px;
     font-weight: 700;
     color: $dark;
+
     // color: $light;
     @include media-max-width(lg) {
         font-size: 64px;
     }
+
     @include media-max-width(md) {
         font-size: 54px;
     }
+
     @include media-max-width(sm) {
         font-size: 48px;
     }
@@ -63,12 +57,15 @@ sans-serif;
     font-size: 64px;
     font-weight: 500;
     color: $dark;
+
     @include media-max-width(lg) {
         font-size: 62px;
     }
+
     @include media-max-width(md) {
         font-size: 48px;
     }
+
     @include media-max-width(sm) {
         font-size: 46px;
     }
@@ -80,12 +77,15 @@ sans-serif;
     font-size: 40px;
     font-weight: 400;
     color: $dark;
+
     @include media-max-width(lg) {
         font-size: 38px;
     }
+
     @include media-max-width(md) {
         font-size: 36px;
     }
+
     @include media-max-width(sm) {
         font-size: 32px;
     }
@@ -97,6 +97,7 @@ sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: $dark;
+
     @include media-max-width(md) {
         font-size: 16px;
     }
@@ -110,6 +111,7 @@ sans-serif;
     // letter-spacing: 1px;
     // line-height: 1;
     color: $black;
+
     @include media-max-width(md) {
         font-size: 14px;
     }
@@ -133,12 +135,15 @@ sans-serif;
 .text_ul {
     font-family: $text_font;
     font-size: 28px;
+
     @include media-max-width(lg) {
         font-size: 26px;
     }
+
     @include media-max-width(md) {
         font-size: 24px;
     }
+
     @include media-max-width(sm) {
         font-size: 20px;
     }
@@ -147,6 +152,7 @@ sans-serif;
 .text_thin {
     font-family: $title-font;
     font-size: 36px;
+
     @include media-max-width(md) {
         font-size: 30px;
     }
