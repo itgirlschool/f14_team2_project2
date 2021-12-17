@@ -6,8 +6,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
     font: $title;
-    font: $text-font;
-    color: $header-color;
+    // color: $header-color;
 }
 
 .education-title__subtitle {
@@ -17,31 +16,28 @@
     text-align: center;
 }
 
-.education-card {
+.container education-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $dark;
     position: relative;
     width: auto;
     height: auto;
     background-color: white;
-    text-align: center;
 }
 
-.education-card__icon {
-    width: 90px;
+.card-icon {
+    // position: relative;
+    width: 125px;
     height: 100px;
 }
 
-.education-card__title {
+.card-title {
     font: $para;
     color: $dark
 }
 
-
-.education-card__subtitle {
+.card-text {
     font: Rubik;
-
-}
-
-.education-card__center {
-    background-color: $accent_color;
 }
