@@ -2,31 +2,70 @@
     max-width: 100%;
 }
 
+.education {
+    background-color: $bright;
+}
+
 .education-title__header {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-align: start;
 }
 
 .education-title__subtitle {
     margin-top: 30px;
     margin-bottom: 60px;
-    color: $accent_color;
+    color: white;
+    text-align: start;
 }
 
-// .container education-card {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: $dark;
-//     position: relative;
-//     width: auto;
-//     height: auto;
-// }
+.card education-card {
+    background-color: white;
+}
 
-.card-body {
-    color: $dark;
+.card education-card__center {
+    background-color: $accent_color;
 }
 
 .card-footer {
     margin-bottom: 5px;
+}
+
+.card-title__education {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: $dark;
+}
+
+.card-text__education {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.card-text__education__center {
+    font-size: 28px;
+    margin-top: 0px;
+    color: white;
+}
+
+.card-title__education third {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: $dark;
+}
+
+.footer-text {
+    font-size: 25px;
+    max-width: 100%;
+    color: $dark;
+}
+
+.footer-text__center {
+    font-size: 25px;
+    max-width: 100%;
+    color: white;
 }

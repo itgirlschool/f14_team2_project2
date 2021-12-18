@@ -590,23 +590,76 @@
   max-width: 100%;
 }
 
+.education {
+  background-color: #82C0CC;
+}
+
 .education-title__header {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  text-align: start;
 }
 
 .education-title__subtitle {
   margin-top: 30px;
   margin-bottom: 60px;
-  color: #FFA62B;
+  color: white;
+  text-align: start;
 }
 
-.card-body {
-  color: #16697a;
+.card education-card {
+  background-color: white;
+}
+
+.card education-card__center {
+  background-color: #FFA62B;
 }
 
 .card-footer {
   margin-bottom: 5px;
+}
+
+.card-title__education {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: #16697a;
+}
+
+.card-text__education {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.card-text__education__center {
+  font-size: 28px;
+  margin-top: 0px;
+  color: white;
+}
+
+.card-title__education third {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: #16697a;
+}
+
+.card-text__education third {
+  font-size: 28px;
+}
+
+.footer-text {
+  font-size: 25px;
+  max-width: 100%;
+  color: #16697a;
+}
+
+.footer-text__center {
+  font-size: 25px;
+  max-width: 100%;
+  color: white;
 }
 
 .main-page {
