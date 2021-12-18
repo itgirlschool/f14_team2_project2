@@ -539,36 +539,32 @@
   background-color: #ede7e3;
 }
 
-.buy__text {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.buy__header {
-  margin-bottom: 1.25rem;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .buy__header {
+@media (max-width: calc(768px - 0.02px)) {
+  .buy .title {
     text-align: center;
   }
 }
 
-.buy__description {
+@media (max-width: calc(576px - 0.02px)) {
+  .buy .title {
+    text-align: center;
+  }
+}
+
+.buy__text {
   text-align: left;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__description {
+  .buy__text {
     text-align: center;
   }
 }
 
 .buy__picture img {
-  width: auto;
-  height: 31.25rem;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  overflow: hidden;
+  width: 700px;
+  height: 500px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -579,50 +575,94 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: calc(768px - 0.02px)) {
-  .buy__picture img {
-    margin: 0;
-    margin-bottom: 10%;
+.contacts {
+  background-color: rgba(130, 192, 204, 0.2);
+}
+
+.mess {
+  width: 10%;
+}
+
+#map {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  #map {
+    border-radius: 20px;
   }
 }
 
+.contacts-on-map {
+  margin-top: 3%;
+}
+
+.colContacts {
+  padding: 1.5%;
+}
+
+.education {
+  background-color: #82C0CC;
+}
+
 .education-title__header {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  text-align: start;
 }
 
 .education-title__subtitle {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
+  text-align: start;
 }
 
-.container education-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #16697a;
-  position: relative;
-  width: auto;
-  height: auto;
+.card education-card {
   background-color: white;
 }
 
-.card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  width: 125px;
-  height: 100px;
+.card education-card__center {
+  background-color: #FFA62B;
+}
+
+.card-footer {
+  margin-bottom: 5px;
+}
+
+.card-title__education {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #16697a;
+}
+
+.card-text__education {
+  margin-top: 10px;
+  color: #16697a;
+}
+
+.card-text__education__center {
+  margin-top: 0px;
+  color: white;
+}
+
+.card-title__education third {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #16697a;
+}
+
+.footer-text {
+  max-width: 100%;
+  color: #16697a;
+}
+
+.footer-text__center {
+  max-width: 100%;
+  color: white;
 }
 
 .main-page {
@@ -1109,6 +1149,12 @@ body {
   right: calc(7vw - 20px * 4);
   margin: auto;
   top: calc(90vh - 20px - 5px);
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .social {
+    display: none;
+  }
 }
 
 @media (max-width: calc(992px - 0.02px)) {
