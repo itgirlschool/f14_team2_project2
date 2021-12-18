@@ -17,16 +17,20 @@
 
     &__text {
 
-
-        a {
+        a:first-child {
             text-decoration: none;
         }
 
-        a:hover {
+        a:first-child:hover {
             color: $dark;
+            display: block;
         }
 
-
+        .buy__button {
+            text-transform: uppercase;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
 
         text-align: left;
 
@@ -40,10 +44,40 @@
     &__picture {
 
         img {
+            object-fit: cover;
             overflow: hidden;
-            width: 700px;
-            height: 500px;
+            max-width: 700px;
+            max-height: 500px;
             @include round-corner(all);
         }
+    }
+
+    .buy-btn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: $accent_color;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    #buy_right-btn {
+        transform: translate(-50%, -50%);
+        margin: 30px 0px 0px 140px;
+    }
+
+    #buy_left-btn {
+        margin: 30px 0px 0px 50px;
+        transform: translate(50%, -50%);
+    }
+
+    #carousel_3 {
+        width: 100%;
+        max-height: 450px;
+        z-index: 1;
     }
 }
