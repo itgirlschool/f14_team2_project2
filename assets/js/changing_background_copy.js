@@ -2,9 +2,9 @@ const offsetValue = 40
 
 $(window).on("scroll touchmove", function() {
     var sellonscroll = '#eddde2';
-    var sellmain = '#82c0cc';
+    var sellmain = 'rgba(130, 192, 204, 0.2)';
 
-    var buyscroll = '#82c0cc';
+    var buyscroll = 'rgba(130, 192, 204, 0.2)';
     var buymain = '#f0f0f0';
 
     var rentscroll = '#f0f0f0';
@@ -14,7 +14,7 @@ $(window).on("scroll touchmove", function() {
     var educationmain = '#eddde2';
 
     var reviewsscroll = '#f0f0f0';
-    var reviewsmain = '#82c0cc';
+    var reviewsmain = 'rgba(130, 192, 204, 0.2)';
 
     changeColor("#sell", '.sell', sellmain, sellonscroll);
     changeColor("#buy", '.buy', buymain, buyscroll);
