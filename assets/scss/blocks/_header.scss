@@ -96,9 +96,13 @@
     text-transform: uppercase;
     color: $white;
 
-    &:hover {
+    // &:hover {
+    //     color: $white;
+    //     border-bottom: 2px solid $white;
+    // }
+
+    &:active {
         color: $white;
-        border-bottom: 2px solid $white;
     }
 
 }
