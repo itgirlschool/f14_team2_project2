@@ -598,23 +598,19 @@
   text-decoration: none;
 }
 
-.education fluid-container {
-  max-width: 100%;
-}
-
 .education {
   background-color: #82C0CC;
 }
 
 .education-title__header {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: start;
 }
 
 .education-title__subtitle {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: white;
   text-align: start;
 }
@@ -635,17 +631,15 @@
   margin-top: 15px;
   margin-bottom: 10px;
   padding: 20px;
-  font-size: 30px;
   color: #16697a;
 }
 
 .card-text__education {
-  font-size: 28px;
   margin-top: 10px;
+  color: #16697a;
 }
 
 .card-text__education__center {
-  font-size: 28px;
   margin-top: 0px;
   color: white;
 }
@@ -654,22 +648,15 @@
   margin-top: 8px;
   margin-bottom: 10px;
   padding: 20px;
-  font-size: 30px;
   color: #16697a;
 }
 
-.card-text__education third {
-  font-size: 28px;
-}
-
 .footer-text {
-  font-size: 25px;
   max-width: 100%;
   color: #16697a;
 }
 
 .footer-text__center {
-  font-size: 25px;
   max-width: 100%;
   color: white;
 }
