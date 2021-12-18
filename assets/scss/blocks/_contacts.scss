@@ -1,0 +1,25 @@
+.contacts {
+    background-color: $light-blue;
+}
+
+.mess {
+    width: 10%;
+}
+
+#map {
+    @include round-corner ($corner: all);
+}
+
+.contacts-on-map {
+    margin-top: 3%;
+}
+
+.colContacts {
+    padding: 2%;
+}
+
+.text_link {
+    @include media-max-width(sm) {
+        font-size: 13px;
+    }
+}

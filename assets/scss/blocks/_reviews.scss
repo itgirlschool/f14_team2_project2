@@ -4,7 +4,6 @@
                             }
                             
                             #reviews {
-                                background-color: $light;
                                 position: relative;
                             }
                             
@@ -78,7 +77,7 @@
                             
                             .item_reviews {
                                 width: 250px;
-                                background: $light;
+                                background: #ffffff00;
                                 object-fit: cover;
                                 display: flex;
                                 overflow-y: hidden;
@@ -113,7 +112,7 @@
                                 @media (max-width: map-get($grid-breakpoints, md)) {
                                     width: 280px;
                                     max-height: 400px;
-                                    background: $light;
+                                    background: $light-blue;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
