@@ -642,7 +642,7 @@
 
 @media (max-width: calc(576px - 0.02px)) {
   .text_link {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -909,7 +909,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .rent-text__header {
+  .hover__header {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffffff00), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ffffff00), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ffffff00));
     background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
     background-repeat: no-repeat;
@@ -922,7 +922,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .rent-text__header:hover {
+  .hover__header:hover {
     background-position: top right, bottom left;
   }
 }
@@ -984,7 +984,6 @@ body {
 }
 
 #reviews {
-  background-color: #ede7e3;
   position: relative;
 }
 
@@ -1091,7 +1090,7 @@ body {
 
 .item_reviews {
   width: 250px;
-  background: #82C0CC;
+  background: #ffffff00;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -1132,7 +1131,7 @@ body {
   .mobile_reviews {
     width: 280px;
     max-height: 400px;
-    background: #ede7e3;
+    background: rgba(130, 192, 204, 0.2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
