@@ -1,4 +1,4 @@
-const img = document.getElementById('carousel_2');
+const img = document.getElementById('carousel_3');
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
