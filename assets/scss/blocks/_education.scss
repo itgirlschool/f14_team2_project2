@@ -3,14 +3,14 @@
 }
 
 .education-title__header {
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: start;
 }
 
 .education-title__subtitle {
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: white;
     text-align: start;
 }
@@ -31,17 +31,66 @@
     margin-top: 15px;
     margin-bottom: 10px;
     padding: 20px;
-    font-size: 30px;
+    // font-size: 28px;
     color: $dark;
 }
 
+// .card-title__education {
+//     margin-top: 15px;
+//     margin-bottom: 10px;
+//     padding: 20px;
+//     // font-size: 30px;
+//     color: $dark;
+
+//     @include media-max-width(md) {
+//         max-width: 100%;
+//         height: 28px;
+//     }
+
+//     @include media-between(lg, xl) {
+//         height: 30px;
+//     }
+
+//     @include media-between(xsm, sm) {
+//         height: 25px;
+//     }
+
+//     @include media-between(xs, xsm) {
+//         height: 22px;
+//     }
+// }
+
+
+// .card-text__education {
+//     margin-top: 10px;
+//     color: $dark;
+
+//     @include media-max-width(md) {
+//         max-width: 100%;
+//         height: 26px;
+//     }
+
+//     @include media-between(lg, xl) {
+//         height: 28px;
+//     }
+
+//     @include media-between(xsm, sm) {
+//         height: 22px;
+//     }
+
+//     @include media-between(xs, xsm) {
+//         height: 20px;
+//     }
+// }
+
 .card-text__education {
-    font-size: 28px;
+    // font-size: 23px;
     margin-top: 10px;
+    color: $dark;
 }
 
 .card-text__education__center {
-    font-size: 28px;
+    // font-size: 23px;
     margin-top: 0px;
     color: white;
 }
@@ -50,18 +99,18 @@
     margin-top: 8px;
     margin-bottom: 10px;
     padding: 20px;
-    font-size: 30px;
+    // font-size: 28px;
     color: $dark;
 }
 
 .footer-text {
-    font-size: 25px;
+    // font-size: 23px;
     max-width: 100%;
     color: $dark;
 }
 
 .footer-text__center {
-    font-size: 25px;
+    // font-size: 23px;
     max-width: 100%;
     color: white;
 }
