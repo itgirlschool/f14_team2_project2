@@ -9,7 +9,7 @@
         transition: all 1s ease;
     }
     
-    .rent-text__header {
+    .hover__header {
         @media (min-width: map-get($grid-breakpoints, lg)) {
             background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, $accent_color 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
             background-repeat: no-repeat;
@@ -21,7 +21,7 @@
         }
     }
     
-    .rent-text__header:hover {
+    .hover__header:hover {
         @media (min-width: map-get($grid-breakpoints, lg)) {
             background-position: top right, bottom left;
         }
