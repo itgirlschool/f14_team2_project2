@@ -1,3 +1,5 @@
+const offsetValue = 40
+
 $(window).on("scroll touchmove", function() {
     var sellonscroll = '#eddde2';
     var sellmain = '#82c0cc';
@@ -24,7 +26,7 @@ $(window).on("scroll touchmove", function() {
 });
 
 function changeColor($block, $class, $color1, $color2) {
-    if ($(document).scrollTop() >= $($block).position().top) {
+    if ($(document).scrollTop() >= ($($block).position().top) - offsetValue) {
         $($class).css('background', $color1);
     } else {
         $($class).css('background', $color2);
