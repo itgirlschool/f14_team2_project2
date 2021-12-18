@@ -1,32 +1,47 @@
-/*.container_about_1 {
-    margin-bottom: 50px;
-    margin-top: 50px;
-}*/
+.container_about_1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .bg-blue {
     background-color: $light-blue;
-    @include round-corner(rb);
+    /* @include round-corner(rb);*/
     border-color: $light-blue;
+    padding: 30px 0px 30px 30px;
+
+    @include media-max-width(lg) {
+        padding: 10px;
+    }
 }
 
-.card-text {
+.card-text_about1 {
     color: $dark;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.card-title {
+.card-title_about1 {
     background-color: $white;
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 20px;
 }
 
+.text_about1 {
+    margin-left: 20px;
+    margin-right: 150px;
+
+    @include media-max-width(lg) {
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+}
+
 .col-photo {
     height: auto;
 }
 
-.row {
+.row_about1 {
     height: auto;
 }
 
@@ -34,15 +49,16 @@
     width: 100%;
     height: auto;
 
-    @include round-corner(lb);
+    @include round-corner(all);
 }
 
-.about-img {
-    padding-left: 20px;
+.about1-img {
+    padding-left: 0px;
+
     margin-bottom: 20px;
 }
 
-.about-btn {
+.about1-btn {
     border-radius: 50px;
     background-color: $accent_color;
 
