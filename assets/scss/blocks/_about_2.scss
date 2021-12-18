@@ -27,11 +27,11 @@
 .text_about_2 {
     text-align: center;
     color: $black;
-}
+    font-size: 16px;
 
-.text_about_2 {
-    text-align: center;
-    color: $black;
+    @include media-max-width(sm) {
+        font-size: 15px;
+    }
 }
 
 .container_picture {
@@ -52,4 +52,6 @@
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
+
+    @include round-corner ($corner: all);
 }
