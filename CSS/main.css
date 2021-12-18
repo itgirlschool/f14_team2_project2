@@ -598,6 +598,14 @@
   text-decoration: none;
 }
 
+.contacts-on-map {
+  margin-top: 3%;
+}
+
+.colContacts {
+  padding: 1.5%;
+}
+
 .education {
   background-color: #82C0CC;
 }
