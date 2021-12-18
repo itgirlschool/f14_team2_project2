@@ -3,11 +3,11 @@ const hamburger = document.querySelector(".icon");
 hamburger.addEventListener("click", () => {hamburger.classList.toggle("active");})
 
 
-// //hide menu after clicking on item
-// $('.js-click-trigger').click(function () {
-//     $('.js-navbar').collapse('hide');
-//     hamburger.classList.remove('active');
-//   });
+//hide menu after clicking on item
+$('.js-click-trigger').click(function () {
+    $('.js-navbar').collapse('hide');
+    hamburger.classList.remove('active');
+  });
 
 
  //changing background color on scroll  
