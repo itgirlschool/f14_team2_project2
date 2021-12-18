@@ -17,7 +17,7 @@
     }
 
     @include media-between(xsm, sm) {
-        height: 10rem;
+        height: 12rem;
     }
 
     @include media-between(xs, xsm) {
