@@ -94,7 +94,7 @@ sans-serif;
 
 //todo прописать тоненький шрифт
 .text {
-    font: $text_font;
+    font-family: $text_font;
     color: $black;
     font-weight: 300;
     font-size: 20px;
