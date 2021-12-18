@@ -442,6 +442,10 @@
   background-color: #16697a;
 }
 
+.footer_text {
+  font-size: smaller;
+}
+
 /*.container_about_1 {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -535,36 +539,32 @@
   background-color: #ede7e3;
 }
 
-.buy__text {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.buy__header {
-  margin-bottom: 1.25rem;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .buy__header {
+@media (max-width: calc(768px - 0.02px)) {
+  .buy .title {
     text-align: center;
   }
 }
 
-.buy__description {
+@media (max-width: calc(576px - 0.02px)) {
+  .buy .title {
+    text-align: center;
+  }
+}
+
+.buy__text {
   text-align: left;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
-  .buy__description {
+  .buy__text {
     text-align: center;
   }
 }
 
 .buy__picture img {
-  width: auto;
-  height: 31.25rem;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  overflow: hidden;
+  width: 700px;
+  height: 500px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -575,11 +575,90 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: calc(768px - 0.02px)) {
-  .buy__picture img {
-    margin: 0;
-    margin-bottom: 10%;
+.contacts {
+  background-color: rgba(130, 192, 204, 0.2);
+}
+
+.mess {
+  width: 10%;
+}
+
+#map {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  #map {
+    border-radius: 20px;
   }
+}
+
+.val {
+  text-decoration: none;
+}
+
+.education {
+  background-color: #82C0CC;
+}
+
+.education-title__header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.education-title__subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: start;
+}
+
+.card education-card {
+  background-color: white;
+}
+
+.card education-card__center {
+  background-color: #FFA62B;
+}
+
+.card-footer {
+  margin-bottom: 5px;
+}
+
+.card-title__education {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #16697a;
+}
+
+.card-text__education {
+  margin-top: 10px;
+  color: #16697a;
+}
+
+.card-text__education__center {
+  margin-top: 0px;
+  color: white;
+}
+
+.card-title__education third {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #16697a;
+}
+
+.footer-text {
+  max-width: 100%;
+  color: #16697a;
+}
+
+.footer-text__center {
+  max-width: 100%;
+  color: white;
 }
 
 .main-page {
@@ -993,27 +1072,42 @@ body {
 }
 
 .container_about_2 {
-  background-color: rgba(255, 166, 43, 0.4);
+  background-color: #EDDDE2;
 }
 
 .card_about_2 {
-  max-height: 25%;
-  background-color: #ffffff;
-  border-radius: 0 0 50px 50px;
-  overflow: hidden;
+  max-width: 18rem;
+  height: 15rem;
 }
 
-@media (max-width: calc(576px - 0.02px)) {
+@media (max-width: calc(768px - 0.02px)) {
   .card_about_2 {
-    border-radius: 0 0 20px 20px;
+    max-width: 100%;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: calc(1200px - 0.02px)) {
+  .card_about_2 {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: calc(576px - 0.02px)) {
+  .card_about_2 {
+    height: 13rem;
+  }
+}
+
+@media (min-width: 0) and (max-width: calc(320px - 0.02px)) {
+  .card_about_2 {
+    height: 20rem;
   }
 }
 
 .text_about_2 {
   text-align: center;
   color: #191e27;
-  font-size: smaller;
-  line-height: 1;
 }
 
 .text_about_2 {
@@ -1025,46 +1119,18 @@ body {
   text-align: center;
 }
 
-@media (max-width: calc(768px - 0.02px)) {
-  .container_picture {
-    text-align: center;
-  }
-}
-
 .picture_about_2 {
-  width: 60%;
-  display: inline-block;
-  position: relative;
-  border-radius: 0 0 50px 50px;
-  overflow: hidden;
+  width: 100%;
 }
 
-@media (max-width: calc(576px - 0.02px)) {
+@media (min-width: 768px) and (max-width: calc(992px - 0.02px)) {
   .picture_about_2 {
-    border-radius: 0 0 20px 20px;
+    margin-top: 2vh;
   }
-}
-
-.picture_about_2:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(255, 166, 43, 0.3);
 }
 
 .photo_taisiay {
   width: 100%;
-  border-radius: 0 0 50px 50px;
-  overflow: hidden;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .photo_taisiay {
-    border-radius: 0 0 20px 20px;
-  }
 }
 
 @media (max-width: calc(992px - 0.02px)) {
@@ -1079,6 +1145,12 @@ body {
   right: calc(7vw - 20px * 4);
   margin: auto;
   top: calc(90vh - 20px - 5px);
+}
+
+@media (max-width: calc(768px - 0.02px)) {
+  .social {
+    display: none;
+  }
 }
 
 @media (max-width: calc(992px - 0.02px)) {
