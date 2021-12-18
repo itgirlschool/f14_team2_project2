@@ -10,6 +10,10 @@
     @include round-corner ($corner: all);
 }
 
-.val {
-    text-decoration: none;
+.contacts-on-map {
+    margin-top: 3%;
+}
+
+.colContacts {
+    padding: 1.5%;
 }
