@@ -17,18 +17,26 @@
     }
 
     @include media-between(xsm, sm) {
-        height: 13rem;
+        height: 12rem;
     }
 
     @include media-between(xs, xsm) {
-        height: 20rem;
+        height: 15rem;
     }
 }
 
 .text_about_2 {
     text-align: center;
     color: $black;
-    font-size: 16px;
+    font-size: 18px;
+
+    @include media-max-width(md) {
+        font-size: 16px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 14px;
+    }
 }
 
 .container_picture {
