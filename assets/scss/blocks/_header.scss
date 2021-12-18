@@ -96,10 +96,10 @@
     text-transform: uppercase;
     color: $white;
 
-    // &:hover {
-    //     color: $white;
-    //     border-bottom: 2px solid $white;
-    // }
+    &:hover {
+        color: $white;
+        border-bottom: 2px solid $white;
+    }
 
     &:active {
         color: $white;
