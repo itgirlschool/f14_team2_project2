@@ -3,7 +3,7 @@ const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
 // Images are from unsplash
-let pictures = ['/assets/img/rent_img/IMG_20211217_220540_309.jpg', '/assets/img/rent_img/IMG_20211217_220528_457.jpg', '/assets/img/rent_img/IMG_20211217_220530_008.jpg', '/assets/img/rent_img/IMG_20211217_220532_681.jpg', '/assets/img/rent_img/IMG_20211217_220534_530.jpg', '/assets/img/rent_img/IMG_20211217_220549_770.jpg'];
+let pictures = ['/assets/img/sell_img/diningroom.jpeg', '/assets/img/sell_img/apricotbedroom.jpg', '/assets/img/sell_img/light.jpg', '/assets/img/sell_img/kitchen.jpg', '/assets/img/sell_img/crimea_sell.jpeg'];
 
 img.src = pictures[0];
 let position = 0;
