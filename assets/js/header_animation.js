@@ -1,9 +1,16 @@
-//HEADER START
+//hamburger to cross animation
 const hamburger = document.querySelector(".icon");
 hamburger.addEventListener("click", () => {hamburger.classList.toggle("active");})
 
-//HEADER END
 
+//hide menu after clicking on item
+$('.js-click-trigger').click(function () {
+    $('.js-navbar').collapse('hide');
+    hamburger.classList.remove('active');
+  });
+
+
+ //changing background color on scroll  
 function scrollValue() {
     var nav = document.querySelector('.navbar-header');
     var nav_item = document.querySelectorAll(".navbar-item_visual")
