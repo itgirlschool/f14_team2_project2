@@ -28,7 +28,7 @@
 .text_about_2 {
     text-align: center;
     color: $black;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .container_picture {
@@ -49,4 +49,6 @@
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
+
+    @include round-corner ($corner: all);
 }

@@ -141,19 +141,13 @@
 
 .text_bold {
   font-family: "Rubik", serif;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
   color: #16697a;
-  font-size: 20px;
 }
 
 @media (max-width: calc(768px - 0.02px)) {
-  .text_bold {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
   .text_bold {
     font-size: 16px;
   }
@@ -161,55 +155,23 @@
 
 .text {
   font-family: "Rubik", serif;
-  color: #191e27;
+  font-size: 16px;
   font-weight: 300;
-  font-size: 20px;
+  color: #191e27;
 }
 
 @media (max-width: calc(768px - 0.02px)) {
   .text {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .text_light {
   color: #ede7e3;
-  font-size: 20px;
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .text_light {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .text_light {
-    font-size: 16px;
-  }
 }
 
 .text_dark {
   color: #16697a;
-  font-size: 20px;
-}
-
-@media (max-width: calc(768px - 0.02px)) {
-  .text_dark {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .text_dark {
-    font-size: 16px;
-  }
 }
 
 .text_link {
@@ -637,13 +599,7 @@
 }
 
 .colContacts {
-  padding: 2%;
-}
-
-@media (max-width: calc(576px - 0.02px)) {
-  .text_link {
-    font-size: 13px;
-  }
+  padding: 1.5%;
 }
 
 .education {
@@ -876,6 +832,10 @@
           animation-delay: 0.5s;
 }
 
+.positive_picture-container {
+  margin: 30px 0 20px 0;
+}
+
 .card-positive {
   border: none;
 }
@@ -909,7 +869,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .hover__header {
+  .rent-text__header {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffffff00), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ffffff00), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ffffff00));
     background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
     background-repeat: no-repeat;
@@ -922,45 +882,9 @@ body {
 }
 
 @media (min-width: 992px) {
-  .hover__header:hover {
+  .rent-text__header:hover {
     background-position: top right, bottom left;
   }
-}
-
-.rent-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background: #FFA62B;
-  border: none;
-  padding: 8px;
-  border-radius: 50%;
-  outline: 0;
-  cursor: pointer;
-  position: absolute;
-}
-
-#right-btn {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 30px 0px 0px 140px;
-}
-
-#left-btn {
-  margin: 30px 0px 0px 50px;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-}
-
-#carousel_2 {
-  width: 100%;
-  max-height: 400px;
-  z-index: 1;
 }
 
 .sell-img {
@@ -984,6 +908,7 @@ body {
 }
 
 #reviews {
+  background-color: #ede7e3;
   position: relative;
 }
 
@@ -1090,7 +1015,7 @@ body {
 
 .item_reviews {
   width: 250px;
-  background: #ffffff00;
+  background: #82C0CC;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -1131,7 +1056,7 @@ body {
   .mobile_reviews {
     width: 280px;
     max-height: 400px;
-    background: rgba(130, 192, 204, 0.2);
+    background: #ede7e3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
