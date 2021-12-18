@@ -586,8 +586,32 @@
   }
 }
 
+
+.contacts {
+  background-color: rgba(130, 192, 204, 0.2);
+}
+
+.mess {
+  width: 10%;
+}
+
+#map {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+@media (max-width: calc(576px - 0.02px)) {
+  #map {
+    border-radius: 20px;
+  }
+}
+
+.val {
+  text-decoration: none;
+}
 .education fluid-container {
   max-width: 100%;
+
 }
 
 .education-title__header {
