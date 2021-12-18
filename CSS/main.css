@@ -598,10 +598,6 @@
   text-decoration: none;
 }
 
-.education fluid-container {
-  max-width: 100%;
-}
-
 .education {
   background-color: #82C0CC;
 }
@@ -656,10 +652,6 @@
   padding: 20px;
   font-size: 30px;
   color: #16697a;
-}
-
-.card-text__education third {
-  font-size: 28px;
 }
 
 .footer-text {
