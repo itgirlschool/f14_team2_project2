@@ -13,12 +13,27 @@
         }
     }
 
+
+
     &__text {
+
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $dark;
+        }
+
+
+
         text-align: left;
 
         @include media-max-width(sm) {
             text-align: center;
         }
+
     }
 
 
