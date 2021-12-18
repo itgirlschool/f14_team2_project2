@@ -1,0 +1,15 @@
+.contacts {
+    background-color: $light-blue;
+}
+
+.mess {
+    width: 10%;
+}
+
+#map {
+    @include round-corner ($corner: all);
+}
+
+.val {
+    text-decoration: none;
+}
