@@ -954,17 +954,19 @@
 
 .card-positive {
   border: none;
+  margin-bottom: 20px;
 }
 
 .card-img-bottom {
   width: 100%;
-  border-radius: 0 0 50px 50px;
+  border-radius: 50px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 @media (max-width: calc(576px - 0.02px)) {
   .card-img-bottom {
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
   }
 }
 
@@ -1052,6 +1054,12 @@ body {
 
 .reasons-title {
   color: #FFA62B;
+}
+
+.sell__button {
+  text-transform: uppercase;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .reviews__header {
@@ -1572,4 +1580,3 @@ body {
   -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 136, 204, 0.3);
           box-shadow: 0px 0px 0px 10px rgba(0, 136, 204, 0.3);
 }
-/*# sourceMappingURL=main.css.map */
