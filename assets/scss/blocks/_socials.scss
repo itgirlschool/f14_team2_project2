@@ -34,8 +34,8 @@ $gutter-ab:7vw;
 }
 
 .social__position_elements {
-    margin-right:calc(-#{$radius} * 2);
-    padding-right: calc(#{$radius} * 2);
+    // margin-right:calc(-#{$radius} * 2);
+    padding-right: $radius;
     height: calc(#{$radius} * 2 + #{$gutter-social} * 2);
 }
 
@@ -48,10 +48,10 @@ $gutter-ab:7vw;
     flex-direction: row;
     gap: $gutter-social;
 
-    opacity: 0;
-    transform-origin: right center;
-    transform: translateX(100%);
-    transition: 0.3s;
+    // opacity: 0;
+    // transform-origin: right center;
+    // transform: translateX(100%);
+    // transition: 0.3s;
     z-index: 25;
 
 }
@@ -94,36 +94,80 @@ $gutter-ab:7vw;
     animation: 10s ease-in-out pulse infinite;
 }
 
-@keyframes pulse {
+@keyframes pulse-viber {
     0% {
 
-        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+        box-shadow: 0px 0px 0px 5px rgba($color-social-viber, 0.3);
     }
 
     83.33% {
-        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+        box-shadow: 0px 0px 0px 5px rgba($color-social-viber, 0.3);
     }
 
     90% {
-        box-shadow: 0px 0px 0px 10px rgba($accent_color, 0.3);
+        box-shadow: 0px 0px 0px 10px rgba($color-social-viber, 0.3);
     }
 
     100% {
-        box-shadow: 0px 0px 0px 5px rgba($accent_color, 0.3);
+        box-shadow: 0px 0px 0px 5px rgba($color-social-viber, 0.3);
     }
 
 }
 
+@keyframes pulse-whatsup {
+    0% {
+
+        box-shadow: 0px 0px 0px 5px rgba($color-social-whatsup, 0.3);
+    }
+
+    83.33% {
+        box-shadow: 0px 0px 0px 5px rgba($color-social-whatsup, 0.3);
+    }
+
+    90% {
+        box-shadow: 0px 0px 0px 10px rgba($color-social-whatsup, 0.3);
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px 5px rgba($color-social-whatsup, 0.3);
+    }
+
+}
+
+@keyframes pulse-telegram {
+    0% {
+
+        box-shadow: 0px 0px 0px 5px rgba($color-social-telegram, 0.3);
+    }
+
+    83.33% {
+        box-shadow: 0px 0px 0px 5px rgba($color-social-telegram, 0.3);
+    }
+
+    90% {
+        box-shadow: 0px 0px 0px 10px rgba($color-social-telegram, 0.3);
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px 5px rgba($color-social-telegram, 0.3);
+    }
+
+}
 
 .btn-social_viber {
     @include btn-social-color ($color-social-viber);
-
+    animation: 10s ease-in-out pulse-viber infinite;
+    animation-delay: 3s;
 }
 
 .btn-social_whatsup {
     @include btn-social-color ($color-social-whatsup);
+    animation: 10s ease-in-out pulse-whatsup infinite;
+    animation-delay: 6s;
 }
 
 .btn-social_telegram {
     @include btn-social-color ($color-social-telegram);
+    animation: 10s ease-in-out pulse-telegram infinite;
+    animation-delay: 9s;
 }

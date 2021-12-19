@@ -17,11 +17,11 @@
     }
 
     @include media-between(xsm, sm) {
-        height: 13rem;
+        height: 12rem;
     }
 
     @include media-between(xs, xsm) {
-        height: 20rem;
+        height: 15rem;
     }
 }
 
@@ -29,6 +29,14 @@
     text-align: center;
     color: $black;
     font-size: 18px;
+
+    @include media-max-width(md) {
+        font-size: 16px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 14px;
+    }
 }
 
 .container_picture {
@@ -49,4 +57,6 @@
     @include media-max-width(lg) {
         padding-bottom: 3vh;
     }
+
+    @include round-corner ($corner: all);
 }
