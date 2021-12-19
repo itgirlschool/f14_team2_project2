@@ -1,6 +1,6 @@
-.education {
-    background-color: $bright;
-}
+// .education {
+//     background-color: $bright;
+// }
 
 .education-title__header {
     margin-top: 20px;
@@ -11,17 +11,24 @@
 .education-title__subtitle {
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white;
+
     text-align: start;
 }
 
-.card education-card {
-    background-color: white;
+.education-card_center {
+    background-color: $light-blue;
 }
 
-.card education-card__center {
-    background-color: $accent_color;
+.education-card {
+    &:hover {
+        box-shadow: 3px 3px 3px darkgrey;
+
+    }
 }
+
+// .card education-card__center {
+//     background-color: $accent_color;
+// }
 
 .card-footer {
     margin-bottom: 5px;
