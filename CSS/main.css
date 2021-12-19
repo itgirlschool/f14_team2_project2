@@ -89,6 +89,12 @@
   }
 }
 
+@media (max-width: calc(321px - 0.02px)) {
+  .main-title {
+    font-size: 42px;
+  }
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
@@ -114,6 +120,12 @@
   }
 }
 
+@media (max-width: calc(321px - 0.02px)) {
+  .title {
+    font-size: 42px;
+  }
+}
+
 .sub-title {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -135,7 +147,7 @@
 
 @media (max-width: calc(576px - 0.02px)) {
   .sub-title {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
@@ -604,6 +616,21 @@
   text-align: left;
 }
 
+.buy__text a:first-child {
+  text-decoration: none;
+}
+
+.buy__text a:first-child:hover {
+  color: #16697a;
+  display: block;
+}
+
+.buy__text .buy__button {
+  text-transform: uppercase;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 @media (max-width: calc(576px - 0.02px)) {
   .buy__text {
     text-align: center;
@@ -611,9 +638,11 @@
 }
 
 .buy__picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
-  width: 700px;
-  height: 500px;
+  max-width: 700px;
+  max-height: 500px;
   border-radius: 50px;
   overflow: hidden;
 }
@@ -622,6 +651,42 @@
   .buy__picture img {
     border-radius: 20px;
   }
+}
+
+.buy .buy-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #FFA62B;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.buy #buy_right-btn {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 30px 0px 0px 140px;
+}
+
+.buy #buy_left-btn {
+  margin: 30px 0px 0px 50px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.buy #carousel_3 {
+  width: 100%;
+  max-height: 450px;
+  z-index: 1;
 }
 
 .contacts {
@@ -1183,13 +1248,13 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: calc(576px - 0.02px)) {
+@media (min-width: 321px) and (max-width: calc(576px - 0.02px)) {
   .card_about_2 {
     height: 12rem;
   }
 }
 
-@media (min-width: 0) and (max-width: calc(320px - 0.02px)) {
+@media (min-width: 0) and (max-width: calc(321px - 0.02px)) {
   .card_about_2 {
     height: 15rem;
   }
@@ -1207,7 +1272,7 @@ body {
   }
 }
 
-@media (max-width: calc(320px - 0.02px)) {
+@media (max-width: calc(321px - 0.02px)) {
   .text_about_2 {
     font-size: 14px;
   }
