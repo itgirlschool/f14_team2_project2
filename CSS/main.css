@@ -1056,6 +1056,12 @@ body {
   color: #FFA62B;
 }
 
+.sell__button {
+  text-transform: uppercase;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .reviews__header {
   text-align: left;
   margin-bottom: 20px;
