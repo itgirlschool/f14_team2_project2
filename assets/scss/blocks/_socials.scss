@@ -12,9 +12,6 @@ $gutter-ab:7vw;
 
     top: calc(90vh - #{$radius} - 5px);
 
-    @include media-max-width(md) {
-        display: none;
-    }
 
     @include media-max-width(lg) {
         right:calc(#{$gutter-ab} - #{$radius} * 2);
@@ -34,7 +31,7 @@ $gutter-ab:7vw;
 }
 
 .social__position_elements {
-    // margin-right:calc(-#{$radius} * 2);
+
     padding-right: $radius;
     height: calc(#{$radius} * 2 + #{$gutter-social} * 2);
 }
@@ -48,10 +45,6 @@ $gutter-ab:7vw;
     flex-direction: row;
     gap: $gutter-social;
 
-    // opacity: 0;
-    // transform-origin: right center;
-    // transform: translateX(100%);
-    // transition: 0.3s;
     z-index: 25;
 
 }
