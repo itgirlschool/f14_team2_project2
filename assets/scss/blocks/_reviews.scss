@@ -99,14 +99,26 @@
                                 }
                             }
                             
+                            .video_reviews {
+                                @media (max-width: map-get($grid-breakpoints, md)) {
+                                    width: 280px;
+                                    max-height: 430px;
+                                    background: $light-blue;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                            
                             .item_reviews video {
                                 overflow-x: hidden;
                                 @media (min-width: map-get($grid-breakpoints, md)) {
                                     width: 250px;
-                                    margin: auto;
+                                    height: 450px;
                                 }
                                 @media (min-width: map-get($grid-breakpoints, xl)) {
                                     width: 300px;
+                                    height: 100%;
                                     margin: auto;
                                 }
                             }
@@ -123,7 +135,7 @@
                             .mobile_reviews {
                                 @media (max-width: map-get($grid-breakpoints, md)) {
                                     width: 280px;
-                                    max-height: 400px;
+                                    max-height: 450px;
                                     background: $light-blue;
                                     display: flex;
                                     justify-content: center;
