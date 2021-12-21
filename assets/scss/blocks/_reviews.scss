@@ -99,6 +99,18 @@
                                 }
                             }
                             
+                            .item_reviews video {
+                                overflow-x: hidden;
+                                @media (min-width: map-get($grid-breakpoints, md)) {
+                                    width: 250px;
+                                    margin: auto;
+                                }
+                                @media (min-width: map-get($grid-breakpoints, xl)) {
+                                    width: 300px;
+                                    margin: auto;
+                                }
+                            }
+                            
                             .mobile_reviews img {
                                 @media (max-width: map-get($grid-breakpoints, md)) {
                                     width: 300px;
