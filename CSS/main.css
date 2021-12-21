@@ -501,7 +501,6 @@
 
 .bg-blue {
   background-color: rgba(130, 192, 204, 0.2);
-  /* @include round-corner(rb);*/
   border-color: rgba(130, 192, 204, 0.2);
   padding: 30px 0px 30px 30px;
 }
@@ -622,7 +621,7 @@
 
 .buy__text a:first-child:hover {
   color: #16697a;
-  display: block;
+  display: inline-block;
 }
 
 .buy__text .buy__button {
@@ -669,24 +668,6 @@
   outline: 0;
   cursor: pointer;
   position: absolute;
-}
-
-.buy #buy_right-btn {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 30px 0px 0px 140px;
-}
-
-.buy #buy_left-btn {
-  margin: 30px 0px 0px 50px;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-}
-
-.buy #carousel_3 {
-  width: 100%;
-  max-height: 450px;
-  z-index: 1;
 }
 
 .contacts {
@@ -974,20 +955,32 @@ body {
 
 @media (min-width: 992px) {
   .hover__header {
-    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffffff00), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(70%, #ffffff00), color-stop(0, #FFA62B)), -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(0, #ffffff00)), -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), color-stop(0, #ffffff00));
-    background: linear-gradient(90deg, #ffffff00 70%, #ffffff00 0), linear-gradient(-90deg, #ffffff00 70%, #FFA62B 0), linear-gradient(90deg, transparent 30%, #ffffff00 0), linear-gradient(-90deg, transparent 30%, #ffffff00 0);
+    display: inline-block;
+    padding: 0% 15px 0% 15px;
+    border-radius: 50px;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFA62B), color-stop(50%, #FFA62B));
+    background-image: linear-gradient(to right, #FFA62B 0, #FFA62B 50%);
+    background-size: 0 100%;
     background-repeat: no-repeat;
-    background-size: 200% 51%;
-    background-position: top left, bottom right;
-    background-clip: text, text, padding-box, padding-box;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media (min-width: 992px) and (max-width: calc(576px - 0.02px)) {
+  .hover__header {
+    border-radius: 20px;
   }
 }
 
 @media (min-width: 992px) {
   .hover__header:hover {
-    background-position: top right, bottom left;
+    background-size: 100% 100%;
   }
 }
 
@@ -1189,6 +1182,42 @@ body {
 }
 
 @media (max-width: 768px) {
+  .video_reviews {
+    width: 280px;
+    max-height: 430px;
+    background: rgba(130, 192, 204, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.item_reviews video {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .item_reviews video {
+    width: 250px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item_reviews video {
+    width: 300px;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
   .mobile_reviews img {
     width: 300px;
     margin: auto;
@@ -1200,7 +1229,7 @@ body {
 @media (max-width: 768px) {
   .mobile_reviews {
     width: 280px;
-    max-height: 400px;
+    max-height: 450px;
     background: rgba(130, 192, 204, 0.2);
     display: -webkit-box;
     display: -ms-flexbox;
