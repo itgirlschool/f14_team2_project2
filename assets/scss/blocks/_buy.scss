@@ -13,8 +13,6 @@
         }
     }
 
-
-
     &__text {
 
         a:first-child {
@@ -23,7 +21,7 @@
 
         a:first-child:hover {
             color: $dark;
-            display: block;
+            display: inline-block;
         }
 
         .buy__button {
@@ -63,21 +61,5 @@
         outline: 0;
         cursor: pointer;
         position: absolute;
-    }
-
-    #buy_right-btn {
-        transform: translate(-50%, -50%);
-        margin: 30px 0px 0px 140px;
-    }
-
-    #buy_left-btn {
-        margin: 30px 0px 0px 50px;
-        transform: translate(50%, -50%);
-    }
-
-    #carousel_3 {
-        width: 100%;
-        max-height: 450px;
-        z-index: 1;
     }
 }
