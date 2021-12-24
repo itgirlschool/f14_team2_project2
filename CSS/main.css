@@ -703,7 +703,7 @@
   }
 }
 
-.education-title__header {
+.hover__header education__title {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: start;
@@ -750,6 +750,25 @@
 .footer-text {
   max-width: 100%;
   color: #16697a;
+}
+
+.education-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #FFA62B;
+  color: #ffffff;
+  border: none;
+  border-radius: 80px;
+  outline: 0;
+  cursor: pointer;
 }
 
 .main-page {
