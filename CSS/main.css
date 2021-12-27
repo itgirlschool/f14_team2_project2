@@ -703,7 +703,7 @@
   }
 }
 
-.education-title__header {
+.hover__header education__title {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: start;
@@ -750,6 +750,25 @@
 .footer-text {
   max-width: 100%;
   color: #16697a;
+}
+
+.education-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #FFA62B;
+  color: #ffffff;
+  border: none;
+  border-radius: 80px;
+  outline: 0;
+  cursor: pointer;
 }
 
 .main-page {
@@ -1336,14 +1355,15 @@ body {
 .social {
   position: fixed;
   z-index: 20;
-  right: calc(7vw - 20px * 4);
+  right: calc(7vw - 25px * 4);
   margin: auto;
-  top: calc(90vh - 20px - 5px);
+  top: calc(90vh - 25px - 5px);
 }
 
 @media (max-width: calc(992px - 0.02px)) {
   .social {
-    right: calc(7vw - 20px * 2);
+    top: calc(80vh - 25px - 5px);
+    right: calc(7vw - 25px * 2);
   }
 }
 
@@ -1366,8 +1386,8 @@ body {
 }
 
 .social__position_elements {
-  padding-right: 20px;
-  height: calc(20px * 2 + 20px * 2);
+  padding-right: 25px;
+  height: calc(25px * 2 + 25px * 2);
 }
 
 .social-all {
@@ -1380,7 +1400,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 20px;
+  gap: 25px;
   z-index: 25;
 }
 
@@ -1391,8 +1411,8 @@ body {
 }
 
 .btn-social {
-  height: calc(20px * 2);
-  width: calc(20px * 2);
+  height: calc(25px * 2);
+  width: calc(25px * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1418,9 +1438,9 @@ body {
   -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
           box-shadow: 0px 0px 0px 5px rgba(255, 166, 43, 0.3);
   background-color: #FFA62B;
-  width: calc(20px * 2);
-  height: calc(20px * 2);
-  margin: 20px;
+  width: calc(25px * 2);
+  height: calc(25px * 2);
+  margin: 25px;
   z-index: 30;
   -webkit-animation: 10s ease-in-out pulse infinite;
           animation: 10s ease-in-out pulse infinite;
