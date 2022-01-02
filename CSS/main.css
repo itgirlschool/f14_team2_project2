@@ -703,6 +703,18 @@
   }
 }
 
+.hover__header education__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.education__title-subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
 .education-card_center {
   background-color: rgba(130, 192, 204, 0.2);
 }
