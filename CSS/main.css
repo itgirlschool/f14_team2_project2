@@ -703,18 +703,6 @@
   }
 }
 
-.hover__header education__title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: start;
-}
-
-.education-title__subtitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: start;
-}
-
 .education-card_center {
   background-color: rgba(130, 192, 204, 0.2);
 }
@@ -722,10 +710,6 @@
 .education-card:hover {
   -webkit-box-shadow: 4px 4px 8px 2px rgba(130, 192, 204, 0.2);
           box-shadow: 4px 4px 8px 2px rgba(130, 192, 204, 0.2);
-}
-
-.card-footer {
-  margin-bottom: 5px;
 }
 
 .card-title__education {
@@ -740,11 +724,8 @@
   color: #16697a;
 }
 
-.card-title__education .third {
-  margin-top: 8px;
-  margin-bottom: 10px;
-  padding: 20px;
-  color: #16697a;
+.card-footer {
+  margin-bottom: 5px;
 }
 
 .footer-text {

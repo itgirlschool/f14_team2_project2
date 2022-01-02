@@ -7,7 +7,6 @@
 .education__title-subtitle {
     margin-top: 20px;
     margin-bottom: 20px;
-
     text-align: start;
 }
 
@@ -17,42 +16,28 @@
 
 .education-card {
 
-
     &:hover {
         box-shadow: 4px 4px 8px 2px $light-blue;
     }
-}
-
-.card-footer {
-    margin-bottom: 5px;
 }
 
 .card-title__education {
     margin-top: 15px;
     margin-bottom: 10px;
     padding: 20px;
-    // font-size: 28px;
     color: $dark;
 }
 
-
-
 .card-text__education {
-    // font-size: 23px;
     margin-top: 10px;
     color: $dark;
 }
 
-.card-title__education .third {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    padding: 20px;
-    // font-size: 28px;
-    color: $dark;
+.card-footer {
+    margin-bottom: 5px;
 }
 
 .footer-text {
-    // font-size: 23px;
     max-width: 100%;
     color: $dark;
 }
@@ -66,7 +51,7 @@
     background-color: $accent_color;
     color: $white;
     border: none;
-    border-radius: 80px;
+    border-radius: 50px;
     outline: 0;
     cursor: pointer;
 }
